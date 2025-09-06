@@ -5,52 +5,64 @@ import { TrendingUp, Star, Clock, Calendar } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import contentGrid from "@/assets/content-grid.jpg";
+import battleofDurango from "@/assets/battleofDurango.jpg";
+import slingBlade from "@/assets/slingBlade.jpg";
+import vendetta from "@/assets/vendetta.jpg";
+import sapioSexual from "@/assets/sapioSexual.jpg"
 
 const Top10 = () => {
   const top10Items = [
     {
       rank: 1,
-      title: "The Mystery of Black Rabbit",
-      category: "TV Series",
-      genre: "Thriller",
+      title: "Battle of Durango",
+      category: "Sports Event",
+      genre: "Mountain Biking",
       viewTime: "8.2M hours",
-      description: "A gripping psychological thriller about secrets in a small town",
+      description:
+        "The first World Mountain Bike Championships held in 1990, showcasing international talent in a thrilling competition.",
       rating: 9.1,
-      episodes: "8 episodes",
-      year: "2025"
+      episodes: "6 hours",
+      year: "1990",
+      imageSrc: battleofDurango,
     },
     {
       rank: 2,
-      title: "Wednesday Season 2",
-      category: "TV Series", 
-      genre: "Horror Comedy",
+      title: "Sling Blade",
+      category: "Movie",
+      genre: "Drama",
       viewTime: "7.8M hours",
-      description: "Wednesday Addams returns to Nevermore Academy for more supernatural mysteries",
-      rating: 8.9,
-      episodes: "10 episodes",
-      year: "2025"
+      description:
+        "A powerful drama about a man with a troubled past who forms an unlikely friendship in a small town.",
+      rating: 8.0,
+      episodes: "2h 15min",
+      year: "1996",
+      imageSrc: slingBlade,
     },
     {
       rank: 3,
-      title: "Beauty in Black",
-      category: "TV Series",
-      genre: "Drama",
-      viewTime: "6.5M hours", 
-      description: "A powerful story exploring identity and beauty standards in modern society",
+      title: "Vendetta",
+      category: "Movie",
+      genre: "Action/Thriller",
+      viewTime: "6.5M hours",
+      description:
+        "When his daughter is brutally murdered and legal justice seems unlikely, William Duncan takes the law into his own hands and sets out on a quest for retribution.",
       rating: 8.7,
-      episodes: "6 episodes",
-      year: "2025"
+      episodes: "1h 36min",
+      year: "2022",
+      imageSrc: vendetta,
     },
     {
       rank: 4,
-      title: "Crimson Hearts",
+      title: "Sapiosexual",
       category: "Movie",
-      genre: "Romance",
+      genre: "Thriller",
       viewTime: "5.9M hours",
-      description: "An epic love story set against the backdrop of a war-torn country",
+      description:
+        "Three people who are tangled in secrets and dark ties to each other's past gather for an uncoupling celebration.",
       rating: 8.5,
-      episodes: "2h 18m",
-      year: "2025"
+      episodes: "1h 27m",
+      year: "2023",
+      imageSrc: sapioSexual,
     },
     {
       rank: 5,
@@ -58,10 +70,12 @@ const Top10 = () => {
       category: "Movie",
       genre: "Sci-Fi Thriller",
       viewTime: "5.2M hours",
-      description: "A tech whistleblower uncovers a massive conspiracy in Silicon Valley",
+      description:
+        "A tech whistleblower uncovers a massive conspiracy in Silicon Valley",
       rating: 8.3,
       episodes: "1h 47m",
-      year: "2025"
+      year: "2025",
+      imageSrc: battleofDurango,
     },
     {
       rank: 6,
@@ -69,10 +83,12 @@ const Top10 = () => {
       category: "TV Series",
       genre: "Comedy",
       viewTime: "4.8M hours",
-      description: "A dysfunctional family comes together for unexpected adventures",
+      description:
+        "A dysfunctional family comes together for unexpected adventures",
       rating: 8.1,
       episodes: "12 episodes",
-      year: "2025"
+      year: "2025",
+      imageSrc: battleofDurango,
     },
     {
       rank: 7,
@@ -80,10 +96,12 @@ const Top10 = () => {
       category: "Documentary",
       genre: "Nature",
       viewTime: "4.3M hours",
-      description: "Explore the mysterious creatures living in Earth's deepest waters",
+      description:
+        "Explore the mysterious creatures living in Earth's deepest waters",
       rating: 8.8,
       episodes: "5 episodes",
-      year: "2025"
+      year: "2025",
+      iimageSrc: battleofDurango,
     },
     {
       rank: 8,
@@ -91,10 +109,12 @@ const Top10 = () => {
       category: "TV Series",
       genre: "Crime Drama",
       viewTime: "3.9M hours",
-      description: "Follow detectives as they solve complex cases in urban environments",
+      description:
+        "Follow detectives as they solve complex cases in urban environments",
       rating: 8.0,
       episodes: "10 episodes",
-      year: "2025"
+      year: "2025",
+      imageSrc: battleofDurango,
     },
     {
       rank: 9,
@@ -102,10 +122,12 @@ const Top10 = () => {
       category: "Movie",
       genre: "Romantic Comedy",
       viewTime: "3.5M hours",
-      description: "Two strangers meet at a 24-hour cafe and change each other's lives",
+      description:
+        "Two strangers meet at a 24-hour cafe and change each other's lives",
       rating: 7.9,
       episodes: "1h 32m",
-      year: "2025"
+      year: "2025",
+      imageSrc: battleofDurango,
     },
     {
       rank: 10,
@@ -113,17 +135,19 @@ const Top10 = () => {
       category: "Documentary Series",
       genre: "Biography",
       viewTime: "3.1M hours",
-      description: "Stories of entrepreneurs who changed the world with their innovations",
+      description:
+        "Stories of entrepreneurs who changed the world with their innovations",
       rating: 8.4,
       episodes: "8 episodes",
-      year: "2025"
-    }
+      year: "2025",
+      imageSrc: battleofDurango,
+    },
   ];
 
   return (
     <div className="min-h-screen bg-background text-foreground">
       <Navigation />
-      
+
       <main className="pt-20 lg:pt-24">
         {/* Hero Section */}
         <section className="px-4 sm:px-6 lg:px-8 py-16 bg-gradient-to-b from-background to-muted/20">
@@ -140,8 +164,9 @@ const Top10 = () => {
                 </h1>
               </div>
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-                Discover what everyone's watching this week. Our Top 10 list features the most popular movies, TV shows, 
-                and documentaries based on viewing hours from Frame Focus members worldwide.
+                Discover what everyone's watching this week. Our Top 10 list
+                features the most popular movies, TV shows, and documentaries
+                based on viewing hours from Frame Focus members worldwide.
               </p>
               <div className="mt-8 text-sm text-muted-foreground">
                 <span className="flex items-center justify-center">
@@ -179,7 +204,7 @@ const Top10 = () => {
                         {/* Image */}
                         <div className="lg:w-80 aspect-video lg:aspect-square overflow-hidden">
                           <img
-                            src={contentGrid}
+                            src={item.imageSrc}
                             alt={item.title}
                             className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                           />
@@ -188,19 +213,22 @@ const Top10 = () => {
                         {/* Content */}
                         <div className="flex-1 p-8">
                           <div className="flex flex-wrap items-center gap-3 mb-4">
-                            <Badge variant="outline" className="text-primary border-primary/50">
+                            <Badge
+                              variant="outline"
+                              className="text-primary border-primary/50"
+                            >
                               {item.category}
                             </Badge>
-                            <Badge variant="secondary">
-                              {item.genre}
-                            </Badge>
-                            <span className="text-sm text-muted-foreground">{item.year}</span>
+                            <Badge variant="secondary">{item.genre}</Badge>
+                            <span className="text-sm text-muted-foreground">
+                              {item.year}
+                            </span>
                           </div>
 
                           <h3 className="text-2xl lg:text-3xl font-bold text-foreground mb-3 group-hover:text-primary transition-colors">
                             {item.title}
                           </h3>
-                          
+
                           <p className="text-muted-foreground mb-6 leading-relaxed">
                             {item.description}
                           </p>
@@ -208,16 +236,20 @@ const Top10 = () => {
                           <div className="flex flex-wrap items-center gap-6 text-sm">
                             <div className="flex items-center text-muted-foreground">
                               <TrendingUp className="h-4 w-4 mr-2 text-primary" />
-                              <span className="font-semibold text-foreground">{item.viewTime}</span>
+                              <span className="font-semibold text-foreground">
+                                {item.viewTime}
+                              </span>
                               <span className="ml-1">viewed</span>
                             </div>
-                            
+
                             <div className="flex items-center text-muted-foreground">
                               <Star className="h-4 w-4 mr-2 text-yellow-400 fill-yellow-400" />
-                              <span className="font-semibold text-foreground">{item.rating}</span>
+                              <span className="font-semibold text-foreground">
+                                {item.rating}
+                              </span>
                               <span className="ml-1">rating</span>
                             </div>
-                            
+
                             <div className="flex items-center text-muted-foreground">
                               <Calendar className="h-4 w-4 mr-2 text-primary" />
                               <span>{item.episodes}</span>
@@ -237,7 +269,8 @@ const Top10 = () => {
         <section className="px-4 sm:px-6 lg:px-8 py-16 bg-gradient-to-t from-muted/20 to-transparent">
           <div className="max-w-7xl mx-auto text-center">
             <p className="text-muted-foreground">
-              Rankings based on viewing hours from Frame Focus members worldwide • Updated daily
+              Rankings based on viewing hours from Frame Focus members worldwide
+              • Updated daily
             </p>
           </div>
         </section>
