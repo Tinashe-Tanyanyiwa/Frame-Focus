@@ -120,7 +120,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
               transition={{ duration: 0.8, delay: 1.2 }}
             >
               {author && (
-                <span>By <span className="text-foreground font-medium">{author}</span></span>
+                <span>With <span className="text-foreground font-medium">{author}</span></span>
               )}
               {date && (
                 <span>{date}</span>

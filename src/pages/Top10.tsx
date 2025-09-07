@@ -8,7 +8,13 @@ import contentGrid from "@/assets/content-grid.jpg";
 import battleofDurango from "@/assets/battleofDurango.jpg";
 import slingBlade from "@/assets/slingBlade.jpg";
 import vendetta from "@/assets/vendetta.jpg";
-import sapioSexual from "@/assets/sapioSexual.jpg"
+import sapioSexual from "@/assets/sapioSexual.jpg";
+import withoutABody from "@/assets/withoutABody.jpg";
+import virus from "@/assets/virus.jpg";
+import gangsterExchange from "@/assets/gangsterExchange.jpg";
+import oneEightyRules from "@/assets/oneEightyRules.jpg";
+import theLastHouseStanding from "@/assets/theLastHouseStanding.jpg";
+import mute from "@/assets/mute.png";
 
 const Top10 = () => {
   const top10Items = [
@@ -66,81 +72,81 @@ const Top10 = () => {
     },
     {
       rank: 5,
-      title: "The Digital Conspiracy",
+      title: "Without A Body",
       category: "Movie",
-      genre: "Sci-Fi Thriller",
+      genre: "Horror/Thriller",
       viewTime: "5.2M hours",
       description:
-        "A tech whistleblower uncovers a massive conspiracy in Silicon Valley",
+        " After moving into a run-down farmhouse with his two daughters, a sceptical author seeks to uncover a sinister past that haunts the house and terrorises his family. ",
       rating: 8.3,
-      episodes: "1h 47m",
-      year: "2025",
-      imageSrc: battleofDurango,
+      episodes: "1h 30m",
+      year: "2017",
+      imageSrc: withoutABody,
     },
     {
       rank: 6,
-      title: "Family Reunion",
+      title: "Movie",
       category: "TV Series",
-      genre: "Comedy",
+      genre: "Sci-fi/Horror",
       viewTime: "4.8M hours",
       description:
-        "A dysfunctional family comes together for unexpected adventures",
+        "Survivors of a worldwide catastrophe attempt to rebuild civilization from their Antarctic stronghold.",
       rating: 8.1,
-      episodes: "12 episodes",
-      year: "2025",
-      imageSrc: battleofDurango,
+      episodes: "2h 36m",
+      year: "1980",
+      imageSrc: virus,
     },
     {
       rank: 7,
-      title: "Ocean's Depths",
-      category: "Documentary",
-      genre: "Nature",
+      title: "Gangster Exchange",
+      category: "Movie",
+      genre: "Action/Thriller",
       viewTime: "4.3M hours",
       description:
-        "Explore the mysterious creatures living in Earth's deepest waters",
+        "Hiro and Marco are caught in a mob war in New York when they are asked to smuggle a 50-pound toilet made of pure heroin. Will they succeed in their attempts?",
       rating: 8.8,
-      episodes: "5 episodes",
-      year: "2025",
-      iimageSrc: battleofDurango,
+      episodes: "1h 32m",
+      year: "2010",
+      imageSrc: gangsterExchange,
     },
     {
       rank: 8,
-      title: "Street Chronicles",
-      category: "TV Series",
-      genre: "Crime Drama",
+      title: "180° Rule",
+      category: "Movie",
+      genre: "Drama",
       viewTime: "3.9M hours",
       description:
-        "Follow detectives as they solve complex cases in urban environments",
-      rating: 8.0,
-      episodes: "10 episodes",
-      year: "2025",
-      imageSrc: battleofDurango,
+        "A school teacher from Tehran is preparing to attend a wedding in northern Iran. When her husband suddenly forbids her to go, she makes a choice.",
+      rating: 5.1,
+      episodes: "1h 23m",
+      year: "2020",
+      imageSrc: oneEightyRules,
     },
     {
       rank: 9,
-      title: "Midnight Cafe",
-      category: "Movie",
-      genre: "Romantic Comedy",
+      title: "The Last House Standing",
+      category: "Documentary",
+      genre: "Informative",
       viewTime: "3.5M hours",
       description:
-        "Two strangers meet at a 24-hour cafe and change each other's lives",
-      rating: 7.9,
-      episodes: "1h 32m",
-      year: "2025",
-      imageSrc: battleofDurango,
+        "A documentary about climate change and how, despite our materials to build sturdy infrastructure, storms and worse are destroying homes everywhere.",
+      rating: 9.6,
+      episodes: "1h 17m",
+      year: "2020",
+      imageSrc: theLastHouseStanding,
     },
     {
       rank: 10,
-      title: "The Innovators",
-      category: "Documentary Series",
-      genre: "Biography",
+      title: "Mute",
+      category: "Short Film",
+      genre: "Horror",
       viewTime: "3.1M hours",
       description:
-        "Stories of entrepreneurs who changed the world with their innovations",
-      rating: 8.4,
-      episodes: "8 episodes",
+        "A boy finds a doll on the road. Strange supernatural events begin to unfold around him.",
+      rating: 8.0,
+      episodes: "5m",
       year: "2025",
-      imageSrc: battleofDurango,
+      imageSrc: mute,
     },
   ];
 
