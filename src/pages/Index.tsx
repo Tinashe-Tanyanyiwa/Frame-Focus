@@ -20,76 +20,80 @@ import barkingOrders from "@/assets/barkingOrders.jpg";
 import lethalogica from "@/assets/lethalogica.jpg";
 import theStandbys from "@/assets/theStandbys.jpg";
 import shoulderDown from "@/assets/shoulderDown.jpg";
-import theSportsShop from "@/assets/theSportsShop.png"
-
+import theSportsShop from "@/assets/theSportsShop.png";
+import gruffAndMe from "@/assets/grufAndMe.jpg";
+import aMiracleInSpanishHarlem from "@/assets/aMiracleInSpanishHarlem.jpg";
+import anitaB from "@/assets/anitaB.jpg";
+import thankYouForJudging from "@/assets/thankYouForJudging.jpg";
+import aTripToTheMoon from "@/assets/aTripToTheMoon.jpg";
+import blackGirlInParis from "@/assets/blackGirlInParis.jpg";
 const Index = () => {
   // Sample data - in a real app this would come from an API
   const contentItems = [
     {
       id: "1",
-      title: "The Mystery of Black Rabbit",
-      category: "Thriller",
-      date: "Sep 1, 2025",
-      readTime: "5 min read",
+      title: "Gruf and Me",
+      category: "Short Film",
+      date: " Jan 1, 2021 ",
+      readTime: "9 min",
       rating: 4.8,
-      imageSrc: blackRabbit,
+      imageSrc: gruffAndMe,
       description:
-        "A gripping thriller that follows mysterious events in a small town where nothing is as it seems. Dark secrets emerge as our protagonists uncover the truth.",
+        "Gruf is a graffiti character that comes to life in animation. Gruf falls in love with the street artist who created him. He desperately tries to find her and discovers that inter-dimensional love is not easy.",
     },
     {
       id: "2",
-      title: "Wednesday Returns",
-      category: "Horror Comedy",
-      date: "Aug 30, 2025",
-      readTime: "3 min read",
-      rating: 4.9,
-      imageSrc: wednesday,
+      title: "A Miracle in Spanish Harlem",
+      category: "Movie",
+      date: "Dec 6, 2013",
+      readTime: "1h 34m",
+      rating: 8.1,
+      imageSrc: aMiracleInSpanishHarlem,
       description:
-        "The beloved gothic character returns for another season of dark humor and supernatural mysteries at Nevermore Academy.",
+        "A Miracle in Spanish Harlem is a humorous and magical story of love, sin, faith and redemption, which begins with a hoax, and ends with a surprising true miracle.",
     },
     {
       id: "3",
-      title: "Beauty in Black",
-      category: "Drama",
-      date: "Aug 28, 2025",
-      readTime: "4 min read",
-      rating: 4.6,
-      imageSrc: beautyBlack,
+      title: "Anita B",
+      category: "Movie",
+      date: "Jan 16, 2014",
+      readTime: "1h 28m",
+      rating: 5.6,
+      imageSrc: anitaB,
       description:
-        "A powerful drama exploring themes of identity, beauty standards, and self-acceptance in contemporary society.",
+        "Immediately after WWII, Anita, a young survivor of Auschwitz, looks at the world with worried eyes. She quickly finds herself involved in an intense and passionate affair that almost shatters her, but eventually gives her the strength to rebel and start a new life.",
     },
     {
       id: "4",
-      title: "Future of Streaming",
-      category: "Documentary",
-      date: "Aug 25, 2025",
-      readTime: "8 min read",
+      title: "Thank You for Judging",
+      category: "Movie",
+      date: "Oct 22, 2011",
+      readTime: "1h 31m",
       rating: 4.7,
-      imageSrc: futureStreaming,
+      imageSrc: thankYouForJudging,
       description:
-        "An in-depth look at how streaming platforms are reshaping entertainment and what the future holds for digital media consumption.",
+        "Filmmakers Sean Fornara and Michael Urie travel back to their hometowns in Texas to chronicle the mother of all Speech and Debate Tournaments - TFA State.",
     },
     {
       id: "5",
-      title: "Frame Focus Originals",
-      category: "Behind the Scenes",
-      date: "Aug 20, 2025",
-      readTime: "6 min read",
-      rating: 4.5,
-      imageSrc: frameFocus,
-      description:
-        "Go behind the camera to see how Frame Focus is creating original content that pushes the boundaries of storytelling.",
+      title: "A Trip To The Moon",
+      category: "Short Film",
+      date: "Sept 1, 1902",
+      readTime: "13m",
+      rating: 8.1,
+      imageSrc: aTripToTheMoon,
+      description: "A group of astronomers go on an expedition to the Moon.",
     },
     {
       id: "6",
-      title: "The Art of Cinematography",
-      category: "Education",
-      date: "Aug 15, 2025",
-      readTime: "10 min read",
-      rating: 4.8,
-      imageSrc: theArtofCinematography,
+      title: "Black Girl in Paris",
+      category: "Short Film",
+      date: "June 1, 2012",
+      readTime: "19m",
+      rating: 7.6,
+      imageSrc: blackGirlInParis,
       description:
-        "Master the techniques and artistic vision that create stunning visual narratives in modern film and television production.",
+        "When a down on her luck aspiring writer runs out of money after moving to Paris, she meets a street-smart prostitute who takes her on a whirlwind adventure of passion, self-discovery and uninhibited sexual freedom.",
     },
   ];
 
@@ -147,11 +151,11 @@ const Index = () => {
       {/* Hero Section */}
       <HeroSection
         title="New on Frame Focus in September 2025"
-        subtitle="Stream The Sports Shop plus new seasons of Wednesday, Beauty in Black, and more."
+        subtitle="Stream Shoulder Down plus new seasons of Wednesday, Beauty in Black, and more."
         description="Discover the latest additions to our growing catalog of premium content. From gripping thrillers to heartwarming dramas, this month brings an incredible variety of stories that will keep you at the edge of your seat."
-        imageSrc={theSportsShop}
-        author="Reese & Kmac"
-        date="2025"
+        imageSrc={shoulderDown}
+        author="GARY LEE. VINCENT"
+        date="2022"
         category="NEW ON FRAME FOCUS"
         showPlayButton={true}
       />
