@@ -6,28 +6,31 @@ import ContentGrid from "@/components/ContentGrid";
 import SpotlightSection from "@/components/SpotlightSection";
 import contentGrid from "@/assets/content-grid.jpg";
 import heroThriller from "@/assets/hero-thriller.jpg";
-
+import theLastHouseStanding from "@/assets/theLastHouseStanding.jpg";
+import thrashBoogie from "@/assets/thrashBoogie.png";
 const Trending = () => {
   const trendingContent = [
     {
       id: "trend-1",
-      title: "Wednesday's Supernatural Return",
-      category: "Trending Now",
-      date: "Sep 2, 2025",
-      readTime: "4 min read",
-      rating: 4.9,
-      imageSrc: contentGrid,
-      description: "The gothic teen sensation returns with more dark humor and supernatural mysteries that have captured global audiences."
+      title: "The Last House Standing",
+      category: "Documentary",
+      date: "Nov 15, 2020",
+      readTime: "57m",
+      rating: 9.6,
+      imageSrc: theLastHouseStanding,
+      description:
+        "A documentary about climate change and how, despite our materials to build sturdy infrastructure, storms and worse are destroying homes everywhere.",
     },
     {
       id: "trend-2",
-      title: "Black Rabbit Breaks Records",
-      category: "Breaking News",
-      date: "Sep 1, 2025", 
-      readTime: "3 min read",
-      rating: 4.8,
-      imageSrc: contentGrid,
-      description: "The psychological thriller becomes the most-watched premiere in Frame Focus history with 50M hours in first week."
+      title: "Marc Rizzo - Thrash Boogie ",
+      category: "Song",
+      date: "Mar 30, 2018",
+      readTime: "5m",
+      rating: 8.9,
+      imageSrc: thrashBoogie,
+      description:
+        "Instrumental guitar track by Marc Rizzo, known for his work in Soulfly and Cavalera Conspiracy, released in 2018 on his album Rotation.",
     },
     {
       id: "trend-3",
@@ -37,7 +40,8 @@ const Trending = () => {
       readTime: "6 min read",
       rating: 4.7,
       imageSrc: contentGrid,
-      description: "Beauty in Black sparks global conversations about representation and self-acceptance in modern media."
+      description:
+        "Beauty in Black sparks global conversations about representation and self-acceptance in modern media.",
     },
     {
       id: "trend-4",
@@ -47,7 +51,8 @@ const Trending = () => {
       readTime: "8 min read",
       rating: 4.6,
       imageSrc: contentGrid,
-      description: "Frame Focus leads innovation with interactive storytelling and immersive viewing experiences."
+      description:
+        "Frame Focus leads innovation with interactive storytelling and immersive viewing experiences.",
     },
     {
       id: "trend-5",
@@ -57,7 +62,8 @@ const Trending = () => {
       readTime: "5 min read",
       rating: 4.8,
       imageSrc: contentGrid,
-      description: "Non-English content dominates viewership as global audiences embrace diverse storytelling."
+      description:
+        "Non-English content dominates viewership as global audiences embrace diverse storytelling.",
     },
     {
       id: "trend-6",
@@ -67,8 +73,9 @@ const Trending = () => {
       readTime: "7 min read",
       rating: 4.5,
       imageSrc: contentGrid,
-      description: "Independent creators find new opportunities on streaming platforms, revolutionizing content creation."
-    }
+      description:
+        "Independent creators find new opportunities on streaming platforms, revolutionizing content creation.",
+    },
   ];
 
   const spotlightTrending = [
@@ -76,18 +83,20 @@ const Trending = () => {
       id: "spot-trend-1",
       title: "What's Trending This Week",
       subtitle: "The hottest content everyone's talking about",
-      description: "From viral moments to breakthrough performances, discover what's capturing audiences worldwide and driving conversations across social media.",
+      description:
+        "From viral moments to breakthrough performances, discover what's capturing audiences worldwide and driving conversations across social media.",
       imageSrc: heroThriller,
       category: "WEEKLY HIGHLIGHTS",
-      featured: true
+      featured: true,
     },
     {
       id: "spot-trend-2",
       title: "Viral Moments",
       subtitle: "Scenes that broke the internet",
-      description: "The most shared, memed, and discussed moments from recent releases.",
+      description:
+        "The most shared, memed, and discussed moments from recent releases.",
       imageSrc: contentGrid,
-      category: "VIRAL"
+      category: "VIRAL",
     },
     {
       id: "spot-trend-3",
@@ -95,29 +104,29 @@ const Trending = () => {
       subtitle: "Breakout performances to watch",
       description: "New talent making waves with unforgettable performances.",
       imageSrc: contentGrid,
-      category: "BREAKOUT"
+      category: "BREAKOUT",
     },
     {
       id: "spot-trend-4",
-      title: "Global Phenomena", 
+      title: "Global Phenomena",
       subtitle: "Content crossing all borders",
       description: "Shows and movies creating worldwide cultural impact.",
       imageSrc: contentGrid,
-      category: "GLOBAL"
-    }
+      category: "GLOBAL",
+    },
   ];
 
   const trendingStats = [
     { label: "Total Views This Week", value: "2.1B", icon: Users },
     { label: "Trending Topics", value: "147", icon: Flame },
     { label: "Countries Reached", value: "190", icon: TrendingUp },
-    { label: "Social Mentions", value: "89M", icon: Star }
+    { label: "Social Mentions", value: "89M", icon: Star },
   ];
 
   return (
     <div className="min-h-screen bg-background text-foreground">
       <Navigation />
-      
+
       <main className="pt-20 lg:pt-24">
         {/* Hero Section */}
         <section className="px-4 sm:px-6 lg:px-8 py-16 bg-gradient-to-b from-background to-muted/20">
@@ -134,8 +143,8 @@ const Trending = () => {
                 </h1>
               </div>
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-                Stay ahead of the curve with the hottest content, viral moments, and cultural phenomena 
-                that are shaping conversations worldwide.
+                Stay ahead of the curve with the hottest content, viral moments,
+                and cultural phenomena that are shaping conversations worldwide.
               </p>
             </motion.div>
           </div>
@@ -156,8 +165,12 @@ const Trending = () => {
                 >
                   <div className="bg-card border border-border/50 rounded-xl p-6 hover:shadow-card-cinema transition-all duration-300">
                     <stat.icon className="h-8 w-8 text-primary mx-auto mb-3" />
-                    <div className="text-3xl font-bold text-foreground mb-2">{stat.value}</div>
-                    <div className="text-sm text-muted-foreground">{stat.label}</div>
+                    <div className="text-3xl font-bold text-foreground mb-2">
+                      {stat.value}
+                    </div>
+                    <div className="text-sm text-muted-foreground">
+                      {stat.label}
+                    </div>
                   </div>
                 </motion.div>
               ))}
@@ -169,7 +182,7 @@ const Trending = () => {
         <SpotlightSection items={spotlightTrending} />
 
         {/* Trending Content Grid */}
-        <ContentGrid 
+        <ContentGrid
           title="What's Trending"
           items={trendingContent}
           showRating={true}
@@ -194,12 +207,36 @@ const Trending = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {[
-                { title: "Thriller Series", trend: "+340%", description: "Psychological dramas dominating charts" },
-                { title: "International Films", trend: "+220%", description: "Global cinema breaking barriers" },
-                { title: "True Crime Docs", trend: "+180%", description: "Real stories captivating audiences" },
-                { title: "Sci-Fi Adventures", trend: "+150%", description: "Futuristic narratives on the rise" },
-                { title: "Comedy Specials", trend: "+120%", description: "Laughter therapy trending worldwide" },
-                { title: "Historical Dramas", trend: "+95%", description: "Period pieces gaining momentum" }
+                {
+                  title: "Thriller Series",
+                  trend: "+340%",
+                  description: "Psychological dramas dominating charts",
+                },
+                {
+                  title: "International Films",
+                  trend: "+220%",
+                  description: "Global cinema breaking barriers",
+                },
+                {
+                  title: "True Crime Docs",
+                  trend: "+180%",
+                  description: "Real stories captivating audiences",
+                },
+                {
+                  title: "Sci-Fi Adventures",
+                  trend: "+150%",
+                  description: "Futuristic narratives on the rise",
+                },
+                {
+                  title: "Comedy Specials",
+                  trend: "+120%",
+                  description: "Laughter therapy trending worldwide",
+                },
+                {
+                  title: "Historical Dramas",
+                  trend: "+95%",
+                  description: "Period pieces gaining momentum",
+                },
               ].map((category, index) => (
                 <motion.div
                   key={category.title}
@@ -231,7 +268,8 @@ const Trending = () => {
         <section className="px-4 sm:px-6 lg:px-8 py-16">
           <div className="max-w-7xl mx-auto text-center">
             <p className="text-muted-foreground">
-              Trending data updated every hour • Based on global viewing patterns and social engagement
+              Trending data updated every hour • Based on global viewing
+              patterns and social engagement
             </p>
           </div>
         </section>

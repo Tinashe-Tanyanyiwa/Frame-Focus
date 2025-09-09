@@ -131,7 +131,7 @@ const Top10 = () => {
       description:
         "A documentary about climate change and how, despite our materials to build sturdy infrastructure, storms and worse are destroying homes everywhere.",
       rating: 9.6,
-      episodes: "1h 17m",
+      episodes: "57m",
       year: "2020",
       imageSrc: theLastHouseStanding,
     },

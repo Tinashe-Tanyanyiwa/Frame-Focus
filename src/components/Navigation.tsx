@@ -24,20 +24,20 @@ const Navigation = () => {
   const navItems = [
     { label: "HOME", path: "/" },
     { label: "TOP 10", path: "/top-10" },
-    { label: "TRENDING", path: "/trending" }, 
+    { label: "TRENDING", path: "/trending" },
     { label: "WHAT TO WATCH", path: "/what-to-watch" },
     { label: "SHOWS", path: "/shows" },
     { label: "MOVIES", path: "/movies" },
     { label: "PODCASTS", path: "/podcasts" },
-    { label: "SHOP", path: "/shop" }
+    { label: "SHOP", path: "/shop" },
   ];
 
   return (
     <>
       <motion.nav
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-          isScrolled 
-            ? "bg-background/95 backdrop-blur-md border-b border-border/50" 
+          isScrolled
+            ? "bg-background/95 backdrop-blur-md border-b border-border/50"
             : "bg-transparent"
         }`}
         initial={{ y: -100 }}
@@ -47,16 +47,20 @@ const Navigation = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16 lg:h-20">
             {/* Logo */}
-            <motion.div 
-              className="flex-shrink-0"
+            <motion.div
+              className={`flex-shrink-0 transition-all duration-300 ${
+                isMobileMenuOpen ? "mx-auto justify-center" : "flex"
+              }`}
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.2 }}
             >
               <Link to="/">
-                <img 
-                  src={frameFocusLogo} 
-                  alt="Frame Focus" 
-                  className="h-8 lg:h-10 w-auto"
+                <img
+                  src={frameFocusLogo}
+                  alt="Frame Focus"
+                  className={`transition-all duration-300 ${
+                    isMobileMenuOpen ? "h-12 w-auto" : "h-8 lg:h-10 w-auto"
+                  }`}
                 />
               </Link>
             </motion.div>
@@ -73,15 +77,19 @@ const Navigation = () => {
                   <Link
                     to={item.path}
                     className={`relative text-sm font-medium transition-colors duration-200 group ${
-                      location.pathname === item.path 
-                        ? "text-primary" 
+                      location.pathname === item.path
+                        ? "text-primary"
                         : "text-foreground hover:text-primary"
                     }`}
                   >
                     {item.label}
-                    <span className={`absolute -bottom-1 left-0 h-0.5 bg-primary transition-all duration-300 ${
-                      location.pathname === item.path ? "w-full" : "w-0 group-hover:w-full"
-                    }`} />
+                    <span
+                      className={`absolute -bottom-1 left-0 h-0.5 bg-primary transition-all duration-300 ${
+                        location.pathname === item.path
+                          ? "w-full"
+                          : "w-0 group-hover:w-full"
+                      }`}
+                    />
                   </Link>
                 </motion.div>
               ))}
@@ -90,7 +98,7 @@ const Navigation = () => {
             {/* Right Side Actions */}
             <div className="flex items-center space-x-4">
               {/* Search */}
-              <motion.div 
+              <motion.div
                 className="relative"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
@@ -104,7 +112,7 @@ const Navigation = () => {
                 >
                   <Search className="h-5 w-5" />
                 </Button>
-                
+
                 {isSearchOpen && (
                   <motion.div
                     className="absolute right-0 top-full mt-2 w-72"
@@ -129,8 +137,8 @@ const Navigation = () => {
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.6 }}
               >
-                <Button 
-                  variant="secondary" 
+                <Button
+                  variant="secondary"
                   size="sm"
                   className="hidden md:flex items-center space-x-2"
                 >
@@ -185,7 +193,9 @@ const Navigation = () => {
                   <Link
                     to={item.path}
                     className={`text-lg font-medium transition-colors ${
-                      location.pathname === item.path ? "text-primary" : "text-foreground hover:text-primary"
+                      location.pathname === item.path
+                        ? "text-primary"
+                        : "text-foreground hover:text-primary"
                     }`}
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
@@ -193,7 +203,7 @@ const Navigation = () => {
                   </Link>
                 </motion.div>
               ))}
-              
+
               <motion.div
                 className="pt-6 border-t border-border"
                 initial={{ opacity: 0, x: 20 }}
