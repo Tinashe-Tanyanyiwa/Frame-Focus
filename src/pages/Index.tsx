@@ -100,7 +100,7 @@ const Index = () => {
   const spotlightItems = [
     {
       id: "spotlight-1",
-      title: "New on Frame Focus in September 2025",
+      title: "New on Film World in September 2025",
       subtitle:
         "Stream Shoulder Down: Road to Redemption, plus new seasons of Wednesday, Beauty in Black, and more.",
       description:
@@ -150,13 +150,13 @@ const Index = () => {
 
       {/* Hero Section */}
       <HeroSection
-        title="New on Frame Focus in September 2025"
+        title="New on Film World in September 2025"
         subtitle="Stream Shoulder Down plus new seasons of Wednesday, Beauty in Black, and more."
         description="Discover the latest additions to our growing catalog of premium content. From gripping thrillers to heartwarming dramas, this month brings an incredible variety of stories that will keep you at the edge of your seat."
         imageSrc={shoulderDown}
         author="GARY LEE. VINCENT"
         date="2022"
-        category="NEW ON FRAME FOCUS"
+        category="NEW ON FILM WORLD"
         showPlayButton={true}
       />
 
@@ -174,7 +174,7 @@ const Index = () => {
       <div className="py-20 bg-gradient-to-t from-muted/20 to-transparent">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <p className="text-muted-foreground">
-            © 2025 Frame Focus. All rights reserved.
+            © 2025 Film World. All rights reserved.
           </p>
         </div>
       </div>

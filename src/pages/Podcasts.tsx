@@ -18,7 +18,7 @@ const Podcasts = () => {
       readTime: "45 min avg",
       rating: 4.8,
       imageSrc: contentGrid,
-      description: "Go behind the scenes with the creators, directors, and stars of your favorite Frame Focus content in intimate conversations about their craft."
+      description: "Go behind the scenes with the creators, directors, and stars of your favorite Film World content in intimate conversations about their craft."
     },
     {
       id: "podcast-2",
@@ -364,7 +364,7 @@ const Podcasts = () => {
         <section className="px-4 sm:px-6 lg:px-8 py-16">
           <div className="max-w-7xl mx-auto text-center">
             <p className="text-muted-foreground">
-              New episodes added weekly • Ad-free listening with Frame Focus Premium
+              New episodes added weekly • Ad-free listening with Film World Premium
             </p>
           </div>
         </section>

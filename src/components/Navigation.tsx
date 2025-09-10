@@ -29,7 +29,6 @@ const Navigation = () => {
     { label: "SHOWS", path: "/shows" },
     { label: "MOVIES", path: "/movies" },
     { label: "PODCASTS", path: "/podcasts" },
-    { label: "SHOP", path: "/shop" },
   ];
 
   return (
@@ -57,7 +56,7 @@ const Navigation = () => {
               <Link to="/">
                 <img
                   src={frameFocusLogo}
-                  alt="Frame Focus"
+                  alt="FILM WORLD"
                   className={`transition-all duration-300 ${
                     isMobileMenuOpen ? "h-12 w-auto" : "h-8 lg:h-10 w-auto"
                   }`}
@@ -123,7 +122,7 @@ const Navigation = () => {
                   >
                     <Input
                       type="search"
-                      placeholder="Search Frame Focus..."
+                      placeholder="Search Film World..."
                       className="w-full bg-secondary border-border"
                       autoFocus
                     />
@@ -132,7 +131,7 @@ const Navigation = () => {
               </motion.div>
 
               {/* Sign In Button */}
-              <motion.div
+              {/* <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.6 }}
@@ -145,7 +144,7 @@ const Navigation = () => {
                   <User className="h-4 w-4" />
                   <span>Sign In</span>
                 </Button>
-              </motion.div>
+              </motion.div> */}
 
               {/* Mobile Menu Toggle */}
               <motion.div
@@ -204,7 +203,7 @@ const Navigation = () => {
                 </motion.div>
               ))}
 
-              <motion.div
+              {/* <motion.div
                 className="pt-6 border-t border-border"
                 initial={{ opacity: 0, x: 20 }}
                 animate={{ opacity: 1, x: 0 }}
@@ -214,7 +213,7 @@ const Navigation = () => {
                   <User className="h-4 w-4 mr-2" />
                   Sign In
                 </Button>
-              </motion.div>
+              </motion.div> */}
             </div>
           </div>
         </motion.div>

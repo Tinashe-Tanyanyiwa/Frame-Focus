@@ -77,7 +77,7 @@ const Movies = () => {
     {
       id: "spot-movie-1",
       title: "Blockbuster Movies Now Streaming",
-      subtitle: "The biggest films of the year, now on Frame Focus",
+      subtitle: "The biggest films of the year, now on Film World",
       description: "From action-packed adventures to heartwarming dramas, watch the movies that defined cinema this year from the comfort of your home.",
       imageSrc: heroThriller,
       category: "BLOCKBUSTERS",
@@ -295,7 +295,7 @@ const Movies = () => {
               viewport={{ once: true }}
             >
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-8">
-                Coming Soon to Frame Focus
+                Coming Soon to Film World
               </h2>
               <div className="bg-card border border-border/50 rounded-2xl p-8 max-w-2xl mx-auto">
                 <Calendar className="h-12 w-12 text-primary mx-auto mb-4" />
@@ -303,7 +303,7 @@ const Movies = () => {
                   New Movie Releases Every Week
                 </h3>
                 <p className="text-muted-foreground mb-6">
-                  From theatrical releases to Frame Focus originals, discover new movies 
+                  From theatrical releases to Film World originals, discover new movies 
                   added to our library every Friday.
                 </p>
                 <Button variant="cinema" size="lg">
@@ -318,7 +318,7 @@ const Movies = () => {
         <section className="px-4 sm:px-6 lg:px-8 py-16 bg-gradient-to-t from-muted/20 to-transparent">
           <div className="max-w-7xl mx-auto text-center">
             <p className="text-muted-foreground">
-              New movies added weekly • Stream in 4K with Frame Focus Premium
+              New movies added weekly • Stream in 4K with Film World Premium
             </p>
           </div>
         </section>

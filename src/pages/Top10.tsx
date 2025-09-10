@@ -166,13 +166,13 @@ const Top10 = () => {
               <div className="flex items-center justify-center mb-6">
                 <TrendingUp className="h-12 w-12 text-primary mr-4" />
                 <h1 className="text-4xl md:text-6xl font-bold text-foreground">
-                  Top 10 on Frame Focus
+                  Top 10 on Film World
                 </h1>
               </div>
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
                 Discover what everyone's watching this week. Our Top 10 list
                 features the most popular movies, TV shows, and documentaries
-                based on viewing hours from Frame Focus members worldwide.
+                based on viewing hours from Film World members worldwide.
               </p>
               <div className="mt-8 text-sm text-muted-foreground">
                 <span className="flex items-center justify-center">
@@ -275,7 +275,7 @@ const Top10 = () => {
         <section className="px-4 sm:px-6 lg:px-8 py-16 bg-gradient-to-t from-muted/20 to-transparent">
           <div className="max-w-7xl mx-auto text-center">
             <p className="text-muted-foreground">
-              Rankings based on viewing hours from Frame Focus members worldwide
+              Rankings based on viewing hours from Film World members worldwide
               • Updated daily
             </p>
           </div>

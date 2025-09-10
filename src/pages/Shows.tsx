@@ -78,7 +78,7 @@ const Shows = () => {
     {
       id: "spot-show-1",
       title: "Must-Watch TV Series",
-      subtitle: "The best shows streaming now on Frame Focus",
+      subtitle: "The best shows streaming now on Film World",
       description: "From gripping dramas to laugh-out-loud comedies, discover the TV series that are defining this generation of storytelling.",
       imageSrc: heroThriller,
       category: "BINGE-WORTHY",
@@ -305,7 +305,7 @@ const Shows = () => {
                 </h3>
                 <p className="text-muted-foreground mb-6">
                   Get ready for our biggest lineup yet with original series, international hits, 
-                  and exclusive premieres coming to Frame Focus.
+                  and exclusive premieres coming to Film World.
                 </p>
                 <Button variant="cinema" size="lg">
                   See Full Schedule
@@ -319,7 +319,7 @@ const Shows = () => {
         <section className="px-4 sm:px-6 lg:px-8 py-16 bg-gradient-to-t from-muted/20 to-transparent">
           <div className="max-w-7xl mx-auto text-center">
             <p className="text-muted-foreground">
-              New episodes added weekly • Stream unlimited with Frame Focus subscription
+              New episodes added weekly • Stream unlimited with Film World subscription
             </p>
           </div>
         </section>

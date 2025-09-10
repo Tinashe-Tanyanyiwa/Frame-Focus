@@ -21,7 +21,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
   imageSrc,
   author,
   date,
-  category = "NEW ON FRAME FOCUS",
+  category = "NEW ON FILM WORLD",
   showPlayButton = false
 }) => {
   return (

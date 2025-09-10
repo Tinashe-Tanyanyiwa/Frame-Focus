@@ -52,7 +52,7 @@ const Trending = () => {
       rating: 4.6,
       imageSrc: contentGrid,
       description:
-        "Frame Focus leads innovation with interactive storytelling and immersive viewing experiences.",
+        "Film World leads innovation with interactive storytelling and immersive viewing experiences.",
     },
     {
       id: "trend-5",

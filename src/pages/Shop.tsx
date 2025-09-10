@@ -23,7 +23,7 @@ const Shop = () => {
     },
     {
       id: "product-2", 
-      name: "Frame Focus Premium Mug",
+      name: "Film World Premium Mug",
       category: "Accessories",
       price: "$19.99",
       originalPrice: null,
@@ -31,7 +31,7 @@ const Shop = () => {
       reviews: 892,
       image: contentGrid,
       badge: "New",
-      description: "Ceramic mug with color-changing Frame Focus logo"
+      description: "Ceramic mug with color-changing Film World logo"
     },
     {
       id: "product-3",
@@ -59,7 +59,7 @@ const Shop = () => {
     },
     {
       id: "product-5",
-      name: "Frame Focus Art Prints Set",
+      name: "Film World Art Prints Set",
       category: "Home & Decor",
       price: "$34.99",
       originalPrice: null,
@@ -67,7 +67,7 @@ const Shop = () => {
       reviews: 445,
       image: contentGrid,
       badge: "New",
-      description: "Set of 4 premium art prints featuring iconic Frame Focus moments"
+      description: "Set of 4 premium art prints featuring iconic Film World moments"
     },
     {
       id: "product-6",
@@ -108,12 +108,12 @@ const Shop = () => {
     {
       icon: Gift,
       title: "Exclusive Items",
-      description: "Products you can only find at Frame Focus Shop"
+      description: "Products you can only find at Film World Shop"
     },
     {
       icon: Star,
       title: "Member Benefits",
-      description: "Special discounts for Frame Focus subscribers"
+      description: "Special discounts for Film World subscribers"
     }
   ];
 
@@ -144,12 +144,12 @@ const Shop = () => {
               <div className="flex items-center justify-center mb-6">
                 <ShoppingBag className="h-12 w-12 text-primary mr-4" />
                 <h1 className="text-4xl md:text-6xl font-bold text-foreground">
-                  Frame Focus Shop
+                  Film World Shop
                 </h1>
               </div>
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
                 Bring your favorite shows and movies into your everyday life with official merchandise, 
-                exclusive collectibles, and unique items inspired by Frame Focus content.
+                exclusive collectibles, and unique items inspired by Film World content.
               </p>
             </motion.div>
           </div>
@@ -337,7 +337,7 @@ const Shop = () => {
               viewport={{ once: true }}
             >
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-8">
-                Frame Focus Members Get More
+                Film World Members Get More
               </h2>
               <div className="bg-card border border-border/50 rounded-2xl p-8 max-w-2xl mx-auto">
                 <Star className="h-12 w-12 text-primary mx-auto mb-4" />
@@ -345,7 +345,7 @@ const Shop = () => {
                   Exclusive Member Discounts & Early Access
                 </h3>
                 <p className="text-muted-foreground mb-6">
-                  Frame Focus subscribers get 15% off all purchases, early access to limited editions, 
+                  Film World subscribers get 15% off all purchases, early access to limited editions, 
                   and exclusive member-only products.
                 </p>
                 <Button variant="cinema" size="lg">
@@ -360,7 +360,7 @@ const Shop = () => {
         <section className="px-4 sm:px-6 lg:px-8 py-16 bg-gradient-to-t from-muted/20 to-transparent">
           <div className="max-w-7xl mx-auto text-center">
             <p className="text-muted-foreground">
-              Free shipping on orders over $50 • 30-day return policy • Exclusive Frame Focus merchandise
+              Free shipping on orders over $50 • 30-day return policy • Exclusive Film World merchandise
             </p>
           </div>
         </section>
