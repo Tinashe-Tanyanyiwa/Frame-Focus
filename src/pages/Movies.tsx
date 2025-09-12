@@ -8,18 +8,19 @@ import ContentGrid from "@/components/ContentGrid";
 import SpotlightSection from "@/components/SpotlightSection";
 import contentGrid from "@/assets/content-grid.jpg";
 import heroThriller from "@/assets/hero-thriller.jpg";
+import walkOfFame from "@/assets/walkOfFame.png";
 
 const Movies = () => {
   const featuredMovies = [
     {
       id: "movie-1",
-      title: "Crimson Hearts",
-      category: "Epic Romance",
-      date: "Sep 10, 2025",
-      readTime: "2h 18m",
-      rating: 4.8,
-      imageSrc: contentGrid,
-      description: "An epic love story set against the backdrop of a war-torn country, following two souls who find each other in the darkest of times."
+      title: "Walk of Fame",
+      category: "Comedy",
+      date: "Mar 24, 2017",
+      readTime: "1h 33m",
+      rating: 3.1,
+      imageSrc: walkOfFame,
+      description: "A motley crew of aspiring performers come under the guidance of an eccentric and volatile acting coach."
     },
     {
       id: "movie-2",

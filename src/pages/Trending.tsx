@@ -8,6 +8,13 @@ import contentGrid from "@/assets/content-grid.jpg";
 import heroThriller from "@/assets/hero-thriller.jpg";
 import theLastHouseStanding from "@/assets/theLastHouseStanding.jpg";
 import thrashBoogie from "@/assets/thrashBoogie.png";
+import kilioChetu from "@/assets/kiliochetu.png";
+import floatLikeAButterfly from "@/assets/floatLikeAButterfly.jpg";
+import littleUkraine from "@/assets/littleUkraine.png";
+import johnDoe from "@/assets/johnDoe.png";
+import randomShootingInLA from "@/assets/randomShootingInLA.png";
+import peaceRiver from "@/assets/peaceRiver.png";
+import gangsterExchange from "@/assets/gangsterExchange.png";
 const Trending = () => {
   const trendingContent = [
     {
@@ -34,47 +41,47 @@ const Trending = () => {
     },
     {
       id: "trend-3",
-      title: "Beauty Standards Revolution",
-      category: "Cultural Impact",
-      date: "Aug 30, 2025",
-      readTime: "6 min read",
-      rating: 4.7,
-      imageSrc: contentGrid,
+      title: "Kilio Chetu",
+      category: "Short Film",
+      date: "Aug, 2024",
+      readTime: "6m",
+      rating: 5.0,
+      imageSrc: kilioChetu,
       description:
-        "Beauty in Black sparks global conversations about representation and self-acceptance in modern media.",
+        "Almost one in two African women has experienced violence at some point during her life. But perpetrators silence their victims by saying the woman is to blame — or that she provoked the abuse. How can this change?",
     },
     {
       id: "trend-4",
-      title: "Streaming Wars Heat Up",
-      category: "Industry News",
-      date: "Aug 28, 2025",
-      readTime: "8 min read",
-      rating: 4.6,
-      imageSrc: contentGrid,
+      title: "Float Like a Butterfly",
+      category: "Movie",
+      date: "Sep 7, 2018",
+      readTime: "1h 44m",
+      rating: 5.9,
+      imageSrc: floatLikeAButterfly,
       description:
-        "Film World leads innovation with interactive storytelling and immersive viewing experiences.",
+        "From the producers of Once and Sing Street, Float Like a Butterfly is a powerful, timely story of a girl's fight for freedom and belonging. In a gender-reversal of the classic film Billy Elliott, 15-year-old Frances must fight for the right to fight back. Raised in roadside camps in rural Ireland, Frances wants to champion her people inside the boxing ring and out, like her idol Muhammad Ali. But society is determined to break her spirit and destroy her way of life. And her father, once her greatest ally, is too defeated himself to imagine anything better for his daughter. But Frances was not born to be broken. In the mother of all fights, she must dig deep to find in herself the Champion her father once knew her to be.",
     },
     {
       id: "trend-5",
-      title: "International Content Surge",
-      category: "Global Trends",
-      date: "Aug 25, 2025",
-      readTime: "5 min read",
-      rating: 4.8,
-      imageSrc: contentGrid,
+      title: "Little Ukraine",
+      category: "Movie",
+      date: "Aug 16, 2022",
+      readTime: "1h 30m",
+      rating: 4.0,
+      imageSrc: littleUkraine,
       description:
-        "Non-English content dominates viewership as global audiences embrace diverse storytelling.",
+        "Little Ukraine is an unfolding crime drama (set in Little Ukraine NYC ) that ties the past and present hopes and dreams of a Ukrainian Jewish immigrant family as they navigate their new found lives in America. From the complexity of familial pitfalls one generation to the next to the wide eyed optimism of a father's hopes and wishes for his son's future colliding with his own disappointments. The immigrant story is relevant, alive and dynamic as our characters struggle to grasp their ever evolving American Dream.",
     },
     {
       id: "trend-6",
-      title: "Creator Economy Boom",
-      category: "Behind the Scenes",
-      date: "Aug 22, 2025",
-      readTime: "7 min read",
-      rating: 4.5,
-      imageSrc: contentGrid,
+      title: "Meet John Doe",
+      category: "Movie",
+      date: "Mar 12, 1941",
+      readTime: "2h 15m",
+      rating: 7.6,
+      imageSrc: johnDoe,
       description:
-        "Independent creators find new opportunities on streaming platforms, revolutionizing content creation.",
+        "A penniless drifter is recruited by an ambitious columnist to impersonate a non-existent person who said he'd be committing suicide as a protest, and a social movement begins.",
     },
   ];
 
@@ -85,39 +92,39 @@ const Trending = () => {
       subtitle: "The hottest content everyone's talking about",
       description:
         "From viral moments to breakthrough performances, discover what's capturing audiences worldwide and driving conversations across social media.",
-      imageSrc: heroThriller,
+      imageSrc: kilioChetu,
       category: "WEEKLY HIGHLIGHTS",
       featured: true,
     },
     {
       id: "spot-trend-2",
-      title: "Viral Moments",
+      title: "Random Shooting In LA",
       subtitle: "Scenes that broke the internet",
       description:
-        "The most shared, memed, and discussed moments from recent releases.",
-      imageSrc: contentGrid,
+        "The most shared, memed, and discussed moments from good releases.",
+      imageSrc: randomShootingInLA,
       category: "VIRAL",
     },
     {
       id: "spot-trend-3",
-      title: "Rising Stars",
+      title: "Peace River",
       subtitle: "Breakout performances to watch",
-      description: "New talent making waves with unforgettable performances.",
-      imageSrc: contentGrid,
+      description: "Talent making waves with unforgettable performances.",
+      imageSrc: peaceRiver,
       category: "BREAKOUT",
     },
     {
       id: "spot-trend-4",
-      title: "Global Phenomena",
+      title: "Gangster Exchange",
       subtitle: "Content crossing all borders",
       description: "Shows and movies creating worldwide cultural impact.",
-      imageSrc: contentGrid,
+      imageSrc: gangsterExchange,
       category: "GLOBAL",
     },
   ];
 
   const trendingStats = [
-    { label: "Total Views This Week", value: "2.1B", icon: Users },
+    { label: "Total Views This Week", value: "21M", icon: Users },
     { label: "Trending Topics", value: "147", icon: Flame },
     { label: "Countries Reached", value: "190", icon: TrendingUp },
     { label: "Social Mentions", value: "89M", icon: Star },
