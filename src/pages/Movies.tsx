@@ -9,6 +9,11 @@ import SpotlightSection from "@/components/SpotlightSection";
 import contentGrid from "@/assets/content-grid.jpg";
 import heroThriller from "@/assets/hero-thriller.jpg";
 import walkOfFame from "@/assets/walkOfFame.png";
+import thrashBoogie from "@/assets/thrashBoogie.png";
+import frankAndFearless from "@/assets/frankAndFearless.png";
+import hillWalkers from "@/assets/hillWalkers.png";
+import Ingenium from "@/assets/Ingenium.png";
+import tabooFamilySecrets from "@/assets/tabooFamilySecrets.png";
 
 const Movies = () => {
   const featuredMovies = [
@@ -20,17 +25,19 @@ const Movies = () => {
       readTime: "1h 33m",
       rating: 3.1,
       imageSrc: walkOfFame,
-      description: "A motley crew of aspiring performers come under the guidance of an eccentric and volatile acting coach."
+      description:
+        "A motley crew of aspiring performers come under the guidance of an eccentric and volatile acting coach.",
     },
     {
       id: "movie-2",
-      title: "The Digital Heist", 
+      title: "The Digital Heist",
       category: "Cyber Thriller",
       date: "Sep 3, 2025",
       readTime: "1h 47m",
       rating: 4.7,
       imageSrc: contentGrid,
-      description: "A group of hackers attempt the impossible - stealing from the most secure digital vault in the world while staying ahead of authorities."
+      description:
+        "A group of hackers attempt the impossible - stealing from the most secure digital vault in the world while staying ahead of authorities.",
     },
     {
       id: "movie-3",
@@ -40,17 +47,19 @@ const Movies = () => {
       readTime: "1h 32m",
       rating: 4.6,
       imageSrc: contentGrid,
-      description: "Two strangers meet at a 24-hour cafe in Paris and embark on an unexpected journey through the city of lights that changes their lives forever."
+      description:
+        "Two strangers meet at a 24-hour cafe in Paris and embark on an unexpected journey through the city of lights that changes their lives forever.",
     },
     {
       id: "movie-4",
       title: "The Last Frontier",
       category: "Space Drama",
-      date: "Aug 22, 2025", 
+      date: "Aug 22, 2025",
       readTime: "2h 05m",
       rating: 4.9,
       imageSrc: contentGrid,
-      description: "Humanity's final mission to find a new home among the stars becomes a test of courage, sacrifice, and the unbreakable bonds of family."
+      description:
+        "Humanity's final mission to find a new home among the stars becomes a test of courage, sacrifice, and the unbreakable bonds of family.",
     },
     {
       id: "movie-5",
@@ -60,18 +69,20 @@ const Movies = () => {
       readTime: "2h 12m",
       rating: 4.5,
       imageSrc: contentGrid,
-      description: "The rise and fall of an underground empire, told through the eyes of those who built it and those who brought it down."
+      description:
+        "The rise and fall of an underground empire, told through the eyes of those who built it and those who brought it down.",
     },
     {
       id: "movie-6",
       title: "Ocean's Call",
-      category: "Adventure Documentary", 
+      category: "Adventure Documentary",
       date: "Aug 8, 2025",
       readTime: "1h 38m",
       rating: 4.8,
       imageSrc: contentGrid,
-      description: "Follow marine biologists as they discover new species in the deepest parts of our oceans and fight to protect these fragile ecosystems."
-    }
+      description:
+        "Follow marine biologists as they discover new species in the deepest parts of our oceans and fight to protect these fragile ecosystems.",
+    },
   ];
 
   const spotlightMovies = [
@@ -79,10 +90,11 @@ const Movies = () => {
       id: "spot-movie-1",
       title: "Blockbuster Movies Now Streaming",
       subtitle: "The biggest films of the year, now on Film World",
-      description: "From action-packed adventures to heartwarming dramas, watch the movies that defined cinema this year from the comfort of your home.",
+      description:
+        "From action-packed adventures to heartwarming dramas, watch the movies that defined cinema this year from the comfort of your home.",
       imageSrc: heroThriller,
       category: "BLOCKBUSTERS",
-      featured: true
+      featured: true,
     },
     {
       id: "spot-movie-2",
@@ -90,7 +102,7 @@ const Movies = () => {
       subtitle: "Critically acclaimed cinema",
       description: "Experience the films that swept awards season.",
       imageSrc: contentGrid,
-      category: "AWARDS"
+      category: "AWARDS",
     },
     {
       id: "spot-movie-3",
@@ -98,7 +110,7 @@ const Movies = () => {
       subtitle: "Unique voices, powerful stories",
       description: "Discover bold storytelling from independent filmmakers.",
       imageSrc: contentGrid,
-      category: "INDIE"
+      category: "INDIE",
     },
     {
       id: "spot-movie-4",
@@ -106,32 +118,87 @@ const Movies = () => {
       subtitle: "Stories from around the world",
       description: "Acclaimed films from global directors and cultures.",
       imageSrc: contentGrid,
-      category: "WORLD CINEMA"
-    }
+      category: "WORLD CINEMA",
+    },
   ];
 
   const movieGenres = [
-    { name: "Action", count: "89 movies", boxOffice: "$2.1B", trending: "+12%" },
+    {
+      name: "Action",
+      count: "89 movies",
+      boxOffice: "$2.1B",
+      trending: "+12%",
+    },
     { name: "Drama", count: "156 movies", boxOffice: "$1.8B", trending: "+8%" },
-    { name: "Comedy", count: "92 movies", boxOffice: "$980M", trending: "+15%" },
-    { name: "Thriller", count: "67 movies", boxOffice: "$1.2B", trending: "+22%" },
-    { name: "Sci-Fi", count: "45 movies", boxOffice: "$1.5B", trending: "+18%" },
-    { name: "Romance", count: "78 movies", boxOffice: "$650M", trending: "+10%" },
-    { name: "Horror", count: "34 movies", boxOffice: "$890M", trending: "+25%" },
-    { name: "Documentary", count: "123 movies", boxOffice: "$340M", trending: "+20%" }
+    {
+      name: "Comedy",
+      count: "92 movies",
+      boxOffice: "$980M",
+      trending: "+15%",
+    },
+    {
+      name: "Thriller",
+      count: "67 movies",
+      boxOffice: "$1.2B",
+      trending: "+22%",
+    },
+    {
+      name: "Sci-Fi",
+      count: "45 movies",
+      boxOffice: "$1.5B",
+      trending: "+18%",
+    },
+    {
+      name: "Romance",
+      count: "78 movies",
+      boxOffice: "$650M",
+      trending: "+10%",
+    },
+    {
+      name: "Horror",
+      count: "34 movies",
+      boxOffice: "$890M",
+      trending: "+25%",
+    },
+    {
+      name: "Documentary",
+      count: "123 movies",
+      boxOffice: "$340M",
+      trending: "+20%",
+    },
   ];
 
   const recentlyWatched = [
-    { title: "Crimson Hearts", rating: 4.8, watched: "2 days ago" },
-    { title: "Digital Heist", rating: 4.7, watched: "5 days ago" },
-    { title: "Midnight Paris", rating: 4.6, watched: "1 week ago" },
-    { title: "Last Frontier", rating: 4.9, watched: "2 weeks ago" }
+    {
+      title: "Frank & Fearless",
+      rating: 5.4,
+      watched: "2 days ago",
+      imageSrc: frankAndFearless,
+    },
+    {
+      title: "Hill Walkers",
+      rating: 4.3,
+      watched: "5 days ago",
+      imageSrc: hillWalkers,
+    },
+    {
+      title: "Ingenium",
+      rating: 4.8,
+      watched: "1 week ago",
+      imageSrc: Ingenium,
+    },
+    {
+      title: "Taboo: Family Secrets",
+      rating: 6.8,
+      watched: "2 weeks ago",
+      imageSrc: tabooFamilySecrets,
+    },
   ];
 
   return (
     <div className="min-h-screen bg-background text-foreground">
       <Navigation />
-      
+
       <main className="pt-20 lg:pt-24">
         {/* Hero Section */}
         <section className="px-4 sm:px-6 lg:px-8 py-16 bg-gradient-to-b from-background to-muted/20">
@@ -148,8 +215,9 @@ const Movies = () => {
                 </h1>
               </div>
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-                Experience the magic of cinema with our vast collection of blockbusters, indie gems, 
-                international films, and award-winning masterpieces.
+                Experience the magic of cinema with our vast collection of
+                blockbusters, indie gems, international films, and award-winning
+                masterpieces.
               </p>
             </motion.div>
           </div>
@@ -164,9 +232,9 @@ const Movies = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
             >
-              Recently Watched
+              Recently Added
             </motion.h2>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {recentlyWatched.map((movie, index) => (
                 <motion.div
@@ -180,7 +248,12 @@ const Movies = () => {
                 >
                   <div className="aspect-video bg-gradient-to-br from-primary/20 to-primary/5 relative">
                     <div className="absolute inset-0 flex items-center justify-center">
-                      <Film className="h-12 w-12 text-primary/60" />
+                      {/* <Film className="h-12 w-12 text-primary/60" /> */}
+                      <img
+                        src={movie.imageSrc}
+                        alt={movie.title}
+                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                      />
                     </div>
                     <div className="absolute top-2 right-2 flex items-center bg-black/70 px-2 py-1 rounded">
                       <Star className="h-3 w-3 fill-yellow-400 text-yellow-400 mr-1" />
@@ -253,7 +326,7 @@ const Movies = () => {
         <SpotlightSection items={spotlightMovies} />
 
         {/* Featured Movies Grid */}
-        <ContentGrid 
+        <ContentGrid
           title="Featured Movies"
           items={featuredMovies}
           showRating={true}
@@ -267,7 +340,7 @@ const Movies = () => {
                 { icon: Film, label: "Total Movies", value: "1,200+" },
                 { icon: Star, label: "Avg Rating", value: "4.6" },
                 { icon: Award, label: "Award Winners", value: "180" },
-                { icon: Clock, label: "Total Runtime", value: "2,400h" }
+                { icon: Clock, label: "Total Runtime", value: "2,400h" },
               ].map((stat, index) => (
                 <motion.div
                   key={stat.label}
@@ -278,8 +351,12 @@ const Movies = () => {
                   className="text-center"
                 >
                   <stat.icon className="h-12 w-12 text-primary mx-auto mb-4" />
-                  <div className="text-3xl font-bold text-foreground mb-2">{stat.value}</div>
-                  <div className="text-sm text-muted-foreground">{stat.label}</div>
+                  <div className="text-3xl font-bold text-foreground mb-2">
+                    {stat.value}
+                  </div>
+                  <div className="text-sm text-muted-foreground">
+                    {stat.label}
+                  </div>
                 </motion.div>
               ))}
             </div>
@@ -304,8 +381,8 @@ const Movies = () => {
                   New Movie Releases Every Week
                 </h3>
                 <p className="text-muted-foreground mb-6">
-                  From theatrical releases to Film World originals, discover new movies 
-                  added to our library every Friday.
+                  From theatrical releases to Film World originals, discover new
+                  movies added to our library every Friday.
                 </p>
                 <Button variant="cinema" size="lg">
                   See Release Calendar
