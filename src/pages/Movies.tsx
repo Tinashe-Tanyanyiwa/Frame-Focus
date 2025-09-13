@@ -14,6 +14,15 @@ import frankAndFearless from "@/assets/frankAndFearless.png";
 import hillWalkers from "@/assets/hillWalkers.png";
 import Ingenium from "@/assets/Ingenium.png";
 import tabooFamilySecrets from "@/assets/tabooFamilySecrets.png";
+import beastNoMore from "@/assets/beastNoMore.png";
+import realmOfShadows from "@/assets/realmOfShadows.png";
+import badBloodTheMovie from "@/assets/badBloodTheMovie.png";
+import blueCall from "@/assets/blueCall.png";
+import aMiracleInSpanishHarlem from "@/assets/aMiracleInSpanishHarlem.jpg";
+import anitaB from "@/assets/anitaB.jpg";
+import thankYouForJudging from "@/assets/thankYouForJudging.jpg"
+import slingBlade from "@/assets/slingBlade.jpg"
+import  gangsterExchange from "@/assets/gangsterExchange.jpg"
 
 const Movies = () => {
   const featuredMovies = [
@@ -30,58 +39,58 @@ const Movies = () => {
     },
     {
       id: "movie-2",
-      title: "The Digital Heist",
-      category: "Cyber Thriller",
-      date: "Sep 3, 2025",
-      readTime: "1h 47m",
-      rating: 4.7,
-      imageSrc: contentGrid,
+      title: "A Miracle in Spanish Harlem",
+      category: "Drama",
+      date: "Dec 6, 2013",
+      readTime: "1h 34m",
+      rating: 8.1,
+      imageSrc: aMiracleInSpanishHarlem,
       description:
-        "A group of hackers attempt the impossible - stealing from the most secure digital vault in the world while staying ahead of authorities.",
+        "A Miracle in Spanish Harlem is a humorous and magical story of love, sin, faith and redemption, which begins with a hoax, and ends with a surprising true miracle.",
     },
     {
       id: "movie-3",
-      title: "Midnight in Paris",
-      category: "Romantic Comedy",
-      date: "Aug 29, 2025",
-      readTime: "1h 32m",
-      rating: 4.6,
-      imageSrc: contentGrid,
+      title: "Anita B",
+      category: "Movie",
+      date: "Jan 16, 2014",
+      readTime: "1h 28m",
+      rating: 5.6,
+      imageSrc: anitaB,
       description:
-        "Two strangers meet at a 24-hour cafe in Paris and embark on an unexpected journey through the city of lights that changes their lives forever.",
+        "Immediately after WWII, Anita, a young survivor of Auschwitz, looks at the world with worried eyes. She quickly finds herself involved in an intense and passionate affair that almost shatters her, but eventually gives her the strength to rebel and start a new life.",
     },
     {
       id: "movie-4",
-      title: "The Last Frontier",
-      category: "Space Drama",
-      date: "Aug 22, 2025",
-      readTime: "2h 05m",
-      rating: 4.9,
-      imageSrc: contentGrid,
+      title: "Thank You for Judging ",
+      category: "Movie",
+      date: "Oct 22, 2011",
+      readTime: "1h 31m",
+      rating: 4.7,
+      imageSrc: thankYouForJudging,
       description:
-        "Humanity's final mission to find a new home among the stars becomes a test of courage, sacrifice, and the unbreakable bonds of family.",
+        "Filmmakers Sean Fornara and Michael Urie travel back to their hometowns in Texas to chronicle the mother of all Speech and Debate Tournaments - TFA State.",
     },
     {
       id: "movie-5",
-      title: "Underground Kings",
-      category: "Crime Drama",
-      date: "Aug 15, 2025",
-      readTime: "2h 12m",
-      rating: 4.5,
-      imageSrc: contentGrid,
+      title: "Sling Blade",
+      category: "Drama",
+      date: "1996 ",
+      readTime: "2h 15m",
+      rating: 8.0,
+      imageSrc: slingBlade,
       description:
-        "The rise and fall of an underground empire, told through the eyes of those who built it and those who brought it down.",
+        "A powerful drama about a man with a troubled past who forms an unlikely friendship in a small town.",
     },
     {
       id: "movie-6",
-      title: "Ocean's Call",
-      category: "Adventure Documentary",
-      date: "Aug 8, 2025",
-      readTime: "1h 38m",
-      rating: 4.8,
-      imageSrc: contentGrid,
+      title: "Gangster Exchange",
+      category: "Action/Thriller",
+      date: "2010",
+      readTime: "1h 32m",
+      rating: 8.8,
+      imageSrc: gangsterExchange,
       description:
-        "Follow marine biologists as they discover new species in the deepest parts of our oceans and fight to protect these fragile ecosystems.",
+        "Hiro and Marco are caught in a mob war in New York when they are asked to smuggle a 50-pound toilet made of pure heroin. Will they succeed in their attempts?",
     },
   ];
 
@@ -89,35 +98,35 @@ const Movies = () => {
     {
       id: "spot-movie-1",
       title: "Blockbuster Movies Now Streaming",
-      subtitle: "The biggest films of the year, now on Film World",
+      subtitle: "The biggest films of the century, now on Film World",
       description:
         "From action-packed adventures to heartwarming dramas, watch the movies that defined cinema this year from the comfort of your home.",
-      imageSrc: heroThriller,
+      imageSrc: beastNoMore,
       category: "BLOCKBUSTERS",
       featured: true,
     },
     {
       id: "spot-movie-2",
-      title: "Award Winners",
+      title: "Realm of shadows",
       subtitle: "Critically acclaimed cinema",
       description: "Experience the films that swept awards season.",
-      imageSrc: contentGrid,
+      imageSrc: realmOfShadows,
       category: "AWARDS",
     },
     {
       id: "spot-movie-3",
-      title: "Independent Films",
+      title: "Bad Blood The Movie",
       subtitle: "Unique voices, powerful stories",
       description: "Discover bold storytelling from independent filmmakers.",
-      imageSrc: contentGrid,
+      imageSrc: badBloodTheMovie,
       category: "INDIE",
     },
     {
       id: "spot-movie-4",
-      title: "International Cinema",
+      title: "Blue Call",
       subtitle: "Stories from around the world",
       description: "Acclaimed films from global directors and cultures.",
-      imageSrc: contentGrid,
+      imageSrc: blueCall,
       category: "WORLD CINEMA",
     },
   ];
@@ -338,7 +347,7 @@ const Movies = () => {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
               {[
                 { icon: Film, label: "Total Movies", value: "1,200+" },
-                { icon: Star, label: "Avg Rating", value: "4.6" },
+                { icon: Star, label: "Avg Rating", value: "6.4" },
                 { icon: Award, label: "Award Winners", value: "180" },
                 { icon: Clock, label: "Total Runtime", value: "2,400h" },
               ].map((stat, index) => (

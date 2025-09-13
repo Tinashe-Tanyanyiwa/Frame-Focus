@@ -85,8 +85,8 @@ const Top10 = () => {
     },
     {
       rank: 6,
-      title: "Movie",
-      category: "Virus",
+      title: "Virus",
+      category: "Movie",
       genre: "Sci-fi/Horror",
       viewTime: "4.8M hours",
       description:

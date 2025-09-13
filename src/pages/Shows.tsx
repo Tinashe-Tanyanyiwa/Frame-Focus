@@ -9,6 +9,7 @@ import ContentGrid from "@/components/ContentGrid";
 import SpotlightSection from "@/components/SpotlightSection";
 import contentGrid from "@/assets/content-grid.jpg";
 import heroThriller from "@/assets/hero-thriller.jpg";
+import lethalogica from "@/assets/lethalogica.jpg"
 
 const Shows = () => {
   const featuredShows = [
@@ -77,10 +78,10 @@ const Shows = () => {
   const spotlightShows = [
     {
       id: "spot-show-1",
-      title: "Must-Watch TV Series",
+      title: "Short-Films",
       subtitle: "The best shows streaming now on Film World",
-      description: "From gripping dramas to laugh-out-loud comedies, discover the TV series that are defining this generation of storytelling.",
-      imageSrc: heroThriller,
+      description: "From gripping dramas to laugh-out-loud comedies, discover the short films that are defining this generation of storytelling.",
+      imageSrc: lethalogica,
       category: "BINGE-WORTHY",
       featured: true
     },
@@ -144,7 +145,7 @@ const Shows = () => {
               <div className="flex items-center justify-center mb-6">
                 <Tv className="h-12 w-12 text-primary mr-4" />
                 <h1 className="text-4xl md:text-6xl font-bold text-foreground">
-                  TV Shows
+                  Short Films
                 </h1>
               </div>
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
