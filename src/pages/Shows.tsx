@@ -9,49 +9,64 @@ import ContentGrid from "@/components/ContentGrid";
 import SpotlightSection from "@/components/SpotlightSection";
 import contentGrid from "@/assets/content-grid.jpg";
 import heroThriller from "@/assets/hero-thriller.jpg";
-import lethalogica from "@/assets/lethalogica.jpg"
+import lethalogica from "@/assets/lethalogica.jpg";
+import tabooFamilySecrets from "@/assets/tabooFamilySecrets.png";
+import charliChaplinPawnShop from "@/assets/charliChaplinPawnShop.png";
+import disorderInTheCourt from "@/assets/disorderInTheCourt.png";
+import gruffAndMe from "@/assets/grufAndMe.jpg";
+import barkingOrders from "@/assets/barkingOrders.jpg";
+import aTripToTheMoon from "@/assets/aTripToTheMoon.jpg";
+import blackGirlInParis from "@/assets/blackGirlInParis.jpg";
+import mute from "@/assets/mute.png";
+import theBlueDrum from "@/assets/theBlueDrum.png";
+import firecracker from "@/assets/firecracker.jpg";
+import { link } from "fs";
 
 const Shows = () => {
   const featuredShows = [
     {
       id: "show-1",
-      title: "Wednesday Season 2",
-      category: "Horror Comedy",
-      date: "Sep 15, 2025",
-      readTime: "10 episodes",
-      rating: 4.9,
-      imageSrc: contentGrid,
-      description: "Wednesday Addams returns to Nevermore Academy with more supernatural mysteries, dark humor, and unexpected revelations about her family's past."
+      title: "Mute",
+      category: "Horror",
+      date: "2013",
+      readTime: "5m",
+      rating: 6.8,
+      imageSrc: mute,
+      description:
+        "A boy finds a doll on the road. Strange supernatural events begin to unfold around him.",
     },
     {
       id: "show-2",
-      title: "The Black Rabbit Mysteries", 
-      category: "Psychological Thriller",
-      date: "Sep 1, 2025",
-      readTime: "8 episodes",
-      rating: 4.8,
-      imageSrc: contentGrid,
-      description: "A mind-bending thriller series that follows detectives uncovering a conspiracy that goes deeper than anyone imagined."
+      title: "The blue drum",
+      category: "Horror",
+      date: "2022",
+      readTime: "17m",
+      rating: 4.4,
+      imageSrc: theBlueDrum,
+      description:
+        "A woman mourning her father's passing is tormented by memories of a mother she never knew. A presence reveals secrets hidden within her family home.",
     },
     {
       id: "show-3",
-      title: "Beauty in Black",
-      category: "Drama Series",
-      date: "Aug 28, 2025",
-      readTime: "6 episodes",
-      rating: 4.7,
-      imageSrc: contentGrid,
-      description: "A powerful exploration of identity, beauty standards, and self-acceptance in contemporary society through interconnected stories."
+      title: "Firecracker",
+      category: "Drama/Comedy/Romance",
+      date: "2022",
+      readTime: "15m",
+      rating: 6.4,
+      imageSrc: firecracker,
+      description:
+        "On the night of their anniversary, a Chinese woman must decide whether to keep her Asian-American girlfriend a secret from her traditional family with the upcoming Chinese New Year or live out her dream as her true self.",
     },
     {
       id: "show-4",
       title: "Digital Conspiracy",
       category: "Tech Thriller",
-      date: "Aug 25, 2025", 
+      date: "Aug 25, 2025",
       readTime: "10 episodes",
       rating: 4.6,
       imageSrc: contentGrid,
-      description: "Silicon Valley secrets unravel when a whistleblower exposes the dark side of the tech industry's biggest companies."
+      description:
+        "Silicon Valley secrets unravel when a whistleblower exposes the dark side of the tech industry's biggest companies.",
     },
     {
       id: "show-5",
@@ -61,18 +76,20 @@ const Shows = () => {
       readTime: "6 episodes",
       rating: 4.9,
       imageSrc: contentGrid,
-      description: "Dive into Earth's most mysterious depths and discover the incredible creatures that call the deep ocean home."
+      description:
+        "Dive into Earth's most mysterious depths and discover the incredible creatures that call the deep ocean home.",
     },
     {
       id: "show-6",
       title: "The Innovators",
-      category: "Biography Series", 
+      category: "Biography Series",
       date: "Aug 18, 2025",
       readTime: "8 episodes",
       rating: 4.8,
       imageSrc: contentGrid,
-      description: "Follow the journeys of entrepreneurs and inventors who changed the world with their groundbreaking innovations."
-    }
+      description:
+        "Follow the journeys of entrepreneurs and inventors who changed the world with their groundbreaking innovations.",
+    },
   ];
 
   const spotlightShows = [
@@ -80,35 +97,39 @@ const Shows = () => {
       id: "spot-show-1",
       title: "Short-Films",
       subtitle: "The best shows streaming now on Film World",
-      description: "From gripping dramas to laugh-out-loud comedies, discover the short films that are defining this generation of storytelling.",
+      description:
+        "From gripping dramas to laugh-out-loud comedies, discover the short films that are defining this generation of storytelling.",
       imageSrc: lethalogica,
       category: "BINGE-WORTHY",
-      featured: true
+      featured: true,
     },
     {
       id: "spot-show-2",
-      title: "New Episodes Weekly",
+      title: "Gruf and Me",
       subtitle: "Fresh content every week",
-      description: "Stay up to date with ongoing series and never miss an episode.",
-      imageSrc: contentGrid,
-      category: "WEEKLY DROPS"
+      description:
+        "Stay up to date with ongoing short films and never miss a new release.",
+      imageSrc: gruffAndMe,
+      category: "RATED",
     },
     {
       id: "spot-show-3",
-      title: "Limited Series",
-      subtitle: "Complete stories in one season",
-      description: "Perfect self-contained narratives you can finish in a weekend.",
-      imageSrc: contentGrid,
-      category: "MINISERIES"
+      title: "A Trip To The Moon",
+      subtitle: "Complete stories in one sitting",
+      description:
+        "Perfect self-contained narratives you can finish in a small period.",
+      imageSrc: aTripToTheMoon,
+      category: "SHORT FILMS",
     },
     {
       id: "spot-show-4",
-      title: "International Hits",
-      subtitle: "Global stories, universal appeal",
-      description: "Acclaimed series from around the world that transcend language barriers.",
-      imageSrc: contentGrid,
-      category: "GLOBAL"
-    }
+      title: "Black Girl in Paris",
+      subtitle: "Global, universal appeal",
+      description:
+        "Acclaimed short films from around the world that transcend language barriers.",
+      imageSrc: blackGirlInParis,
+      category: "GLOBAL",
+    },
   ];
 
   const genres = [
@@ -119,20 +140,44 @@ const Shows = () => {
     { name: "Documentary", count: "92 shows", trending: "+12%" },
     { name: "Horror", count: "38 shows", trending: "+25%" },
     { name: "Romance", count: "67 shows", trending: "+10%" },
-    { name: "Action", count: "71 shows", trending: "+14%" }
+    { name: "Action", count: "71 shows", trending: "+14%" },
   ];
 
   const currentlyWatching = [
-    { title: "Wednesday S2", progress: 65, episode: "Episode 6 of 10" },
-    { title: "Black Rabbit", progress: 100, episode: "Season Complete" },
-    { title: "Beauty in Black", progress: 30, episode: "Episode 2 of 6" },
-    { title: "Digital Conspiracy", progress: 80, episode: "Episode 8 of 10" }
+    {
+      title: "The Pawnshop",
+      progress: 1,
+      episode: "25m",
+      imageSrc: charliChaplinPawnShop,
+      link: "https://redcoraluniverse.com/en/movies/charlie-chaplin's-the-pawnshop-67c9b9a3553ea379b712c7a6?ccId=6796a961115e3f20ba4065f5",
+    },
+    {
+      title: "Disorder in the court",
+      progress: 1,
+      episode: "17m",
+      imageSrc: disorderInTheCourt,
+      link: "https://redcoraluniverse.com/en/movies/disorder-in-the-court-679c9b051060be9d3ca2c317?ccId=67d04815b956ad93adf5d25c",
+    },
+    {
+      title: "Lethalogica",
+      progress: 1,
+      episode: "6m",
+      imageSrc: lethalogica,
+      link: "#",
+    },
+    {
+      title: "Barking Orders",
+      progress: 1,
+      episode: "2m",
+      imageSrc: barkingOrders,
+      link: "#",
+    },
   ];
 
   return (
     <div className="min-h-screen bg-background text-foreground">
       <Navigation />
-      
+
       <main className="pt-20 lg:pt-24">
         {/* Hero Section */}
         <section className="px-4 sm:px-6 lg:px-8 py-16 bg-gradient-to-b from-background to-muted/20">
@@ -149,8 +194,9 @@ const Shows = () => {
                 </h1>
               </div>
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-                Immerse yourself in captivating stories, unforgettable characters, and binge-worthy series 
-                that will keep you coming back for more.
+                Immerse yourself in captivating stories, unforgettable
+                characters, and stream short films that will keep you coming
+                back for more.
               </p>
             </motion.div>
           </div>
@@ -165,9 +211,9 @@ const Shows = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
             >
-              Continue Watching
+              What To Watch
             </motion.h2>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {currentlyWatching.map((show, index) => (
                 <motion.div
@@ -180,11 +226,13 @@ const Shows = () => {
                 >
                   <Card className="bg-card border-border/50 overflow-hidden hover:shadow-card-cinema transition-all duration-300 group cursor-pointer">
                     <div className="relative aspect-video bg-gradient-to-br from-primary/20 to-primary/5">
-                      <div className="absolute inset-0 flex items-center justify-center">
-                        <Play className="h-12 w-12 text-primary opacity-60 group-hover:opacity-100 transition-opacity" />
-                      </div>
+                      <img
+                        src={show.imageSrc}
+                        alt={show.title}
+                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                      />
                       <div className="absolute bottom-0 left-0 right-0 h-1 bg-muted">
-                        <div 
+                        <div
                           className="h-full bg-primary transition-all duration-500"
                           style={{ width: `${show.progress}%` }}
                         />
@@ -241,9 +289,7 @@ const Shows = () => {
                       {genre.trending}
                     </Badge>
                   </div>
-                  <p className="text-sm text-muted-foreground">
-                    {genre.count}
-                  </p>
+                  <p className="text-sm text-muted-foreground">{genre.count}</p>
                 </motion.div>
               ))}
             </div>
@@ -254,7 +300,7 @@ const Shows = () => {
         <SpotlightSection items={spotlightShows} />
 
         {/* Featured Shows Grid */}
-        <ContentGrid 
+        <ContentGrid
           title="Featured Shows"
           items={featuredShows}
           showRating={true}
@@ -268,7 +314,7 @@ const Shows = () => {
                 { icon: Tv, label: "Total Shows", value: "580+" },
                 { icon: Star, label: "Avg Rating", value: "4.7" },
                 { icon: Calendar, label: "New This Week", value: "12" },
-                { icon: Users, label: "Total Views", value: "1.2B" }
+                { icon: Users, label: "Total Views", value: "1.2B" },
               ].map((stat, index) => (
                 <motion.div
                   key={stat.label}
@@ -279,8 +325,12 @@ const Shows = () => {
                   className="text-center"
                 >
                   <stat.icon className="h-12 w-12 text-primary mx-auto mb-4" />
-                  <div className="text-3xl font-bold text-foreground mb-2">{stat.value}</div>
-                  <div className="text-sm text-muted-foreground">{stat.label}</div>
+                  <div className="text-3xl font-bold text-foreground mb-2">
+                    {stat.value}
+                  </div>
+                  <div className="text-sm text-muted-foreground">
+                    {stat.label}
+                  </div>
                 </motion.div>
               ))}
             </div>
@@ -305,8 +355,9 @@ const Shows = () => {
                   Exciting New Series Premiering Soon
                 </h3>
                 <p className="text-muted-foreground mb-6">
-                  Get ready for our biggest lineup yet with original series, international hits, 
-                  and exclusive premieres coming to Film World.
+                  Get ready for our biggest lineup yet with original series,
+                  international hits, and exclusive premieres coming to Film
+                  World.
                 </p>
                 <Button variant="cinema" size="lg">
                   See Full Schedule
@@ -320,7 +371,8 @@ const Shows = () => {
         <section className="px-4 sm:px-6 lg:px-8 py-16 bg-gradient-to-t from-muted/20 to-transparent">
           <div className="max-w-7xl mx-auto text-center">
             <p className="text-muted-foreground">
-              New episodes added weekly • Stream unlimited with Film World subscription
+              New episodes added weekly • Stream unlimited with Film World
+              subscription
             </p>
           </div>
         </section>
