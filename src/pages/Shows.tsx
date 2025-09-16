@@ -20,6 +20,9 @@ import blackGirlInParis from "@/assets/blackGirlInParis.jpg";
 import mute from "@/assets/mute.png";
 import theBlueDrum from "@/assets/theBlueDrum.png";
 import firecracker from "@/assets/firecracker.jpg";
+import anaarkali from "@/assets/anaarkali.png";
+import theNightJaguar from "@/assets/theNightJaguar.png";
+import theSongOfHer from "@/assets/theSongOfHer.jpg";
 import { link } from "fs";
 
 const Shows = () => {
@@ -59,36 +62,36 @@ const Shows = () => {
     },
     {
       id: "show-4",
-      title: "Digital Conspiracy",
-      category: "Tech Thriller",
-      date: "Aug 25, 2025",
-      readTime: "10 episodes",
-      rating: 4.6,
-      imageSrc: contentGrid,
+      title: "Anaarkali",
+      category: "Drama",
+      date: "2019",
+      readTime: "25m",
+      rating: 8.9,
+      imageSrc: anaarkali,
       description:
-        "Silicon Valley secrets unravel when a whistleblower exposes the dark side of the tech industry's biggest companies.",
+        "Inspired by the Indian legend of the slave girl who becomes the King's favorite concubine, only to fall in love with his son, Anaarkali is the story of Simran, the mistress of powerful and corrupt Mumbai businessman Rashid Bhai. Simran dreams of being a Bollywood star, but when she falls for Rashid's employee Arjun, she tempts the fates at the risk of both their lives. In a city of extremes, it is only through love that she finds salvation.",
     },
     {
       id: "show-5",
-      title: "Ocean's Deep",
-      category: "Nature Documentary",
-      date: "Aug 20, 2025",
-      readTime: "6 episodes",
+      title: "The Night Jaguar",
+      category: "Short",
+      date: "2023",
+      readTime: "9m",
       rating: 4.9,
-      imageSrc: contentGrid,
+      imageSrc: theNightJaguar,
       description:
-        "Dive into Earth's most mysterious depths and discover the incredible creatures that call the deep ocean home.",
+        "a 2023 short film directed by Robert Zimmer Jr., written by Zimmer Jr. and Matthew Halterman, and produced by Deeper Magic Communications",
     },
     {
       id: "show-6",
-      title: "The Innovators",
-      category: "Biography Series",
-      date: "Aug 18, 2025",
-      readTime: "8 episodes",
+      title: "The Song Of Her",
+      category: "Sci-Fi",
+      date: "2019",
+      readTime: "20m",
       rating: 4.8,
-      imageSrc: contentGrid,
+      imageSrc: theSongOfHer,
       description:
-        "Follow the journeys of entrepreneurs and inventors who changed the world with their groundbreaking innovations.",
+        "The Song of Her is a love story that lives in an alternate universe. We follow a tortured pipe organist (Flora) who tries to drown out the sound of a world war while working for a secret society (GODA) of ruthless women.",
     },
   ];
 

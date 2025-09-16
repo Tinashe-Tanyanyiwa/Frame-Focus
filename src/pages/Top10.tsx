@@ -143,7 +143,7 @@ const Top10 = () => {
       viewTime: "3.1M hours",
       description:
         "A boy finds a doll on the road. Strange supernatural events begin to unfold around him.",
-      rating: 8.0,
+      rating: 6.8,
       episodes: "5m",
       year: "2025",
       imageSrc: mute,
