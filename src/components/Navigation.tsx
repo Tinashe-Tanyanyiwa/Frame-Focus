@@ -28,7 +28,7 @@ const Navigation = () => {
     { label: "WHAT TO WATCH", path: "/what-to-watch" },
     { label: "SHORT FILMS", path: "/short-films" },
     { label: "MOVIES", path: "/movies" },
-    { label: "PODCASTS", path: "/podcasts" },
+    { label: "MUSIC", path: "/music" },
   ];
 
   return (

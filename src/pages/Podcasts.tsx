@@ -7,6 +7,10 @@ import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import ContentGrid from "@/components/ContentGrid";
 import contentGrid from "@/assets/content-grid.jpg";
+import maino from "@/assets/maino.png";
+import kalenChase from "@/assets/kalenChase.jpg";
+import devinWhite from "@/assets/devinWhite.jpg";
+import paysonMeistrich from "@/assets/paysonMeistrich.jpeg";
 
 const Podcasts = () => {
   const featuredPodcasts = [
@@ -84,40 +88,47 @@ const Podcasts = () => {
   ];
 
   const currentlyListening = [
-    { title: "Creator Stories #47", progress: 65, timeLeft: "12 min left" },
-    { title: "Future of Streaming #23", progress: 100, timeLeft: "Complete" },
-    { title: "Global Stories #31", progress: 30, timeLeft: "35 min left" },
-    { title: "Binge Report #89", progress: 80, timeLeft: "5 min left" }
+    { title: "Maino", progress: 1, timeLeft: "American rapper and radio personality", imageSrc: maino },
+    { title: "Kalen Chase", progress: 1, timeLeft: "Rock n Roll", imageSrc: kalenChase },
+    { title: "Devin White", progress: 1, timeLeft: "R&B singer", imageSrc: devinWhite },
+    { title: "Payson Meistrich", progress: 1, timeLeft: "Singer", imageSrc: paysonMeistrich }
   ];
 
   const topEpisodes = [
     {
-      title: "The Wednesday Phenomenon: How Gothic Became Mainstream",
-      podcast: "Behind the Frame", 
-      duration: "48 min",
+      title: "Lucinda's Thriller Flash Mob Compilation",
+      podcast: "All Ages", 
+      duration: "6m",
       plays: "1.2M",
-      date: "Sep 1, 2025"
+      date: "2024"
     },
     {
-      title: "Breaking Down Black Rabbit's Mind-Bending Plot",
-      podcast: "Fan Theories",
-      duration: "52 min", 
+      title: "Saigon's Ol Skool Moves Flash Mob",
+      podcast: "All Ages",
+      duration: "2m", 
       plays: "890K",
-      date: "Aug 30, 2025"
+      date: "2023"
     },
     {
-      title: "The Psychology of Binge-Watching",
-      podcast: "Future of Streaming",
-      duration: "41 min",
+      title: "Lucinda's Leave Your Hat On Flash Mob - with Sweet Voodoo",
+      podcast: "All Ages",
+      duration: "5m",
       plays: "750K", 
-      date: "Aug 28, 2025"
+      date: "2024"
     },
     {
-      title: "International Content Takes Over: A Global Shift",
-      podcast: "Global Stories",
-      duration: "56 min",
+      title: "Lucinda's Freedom 4th of July Flash Mob",
+      podcast: "All Ages",
+      duration: "4m",
       plays: "680K",
-      date: "Aug 25, 2025"
+      date: "2022"
+    },
+    {
+      title: "Lucinda's Footloose Flash Mob",
+      podcast: "All Ages",
+      duration: "5m",
+      plays: "680K",
+      date: "2020"
     }
   ];
 
@@ -137,11 +148,11 @@ const Podcasts = () => {
               <div className="flex items-center justify-center mb-6">
                 <Mic className="h-12 w-12 text-primary mr-4" />
                 <h1 className="text-4xl md:text-6xl font-bold text-foreground">
-                  Podcasts
+                  Music & Podcasts
                 </h1>
               </div>
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-                Dive deeper into the world of entertainment with exclusive podcasts featuring creator interviews, 
+                Dive deeper into the world of entertainment with exclusive  music,  podcasts featuring creator interviews, 
                 behind-the-scenes stories, and expert analysis of your favorite content.
               </p>
             </motion.div>
@@ -157,7 +168,7 @@ const Podcasts = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
             >
-              Continue Listening
+             Who To Listen To
             </motion.h2>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -171,8 +182,12 @@ const Podcasts = () => {
                   whileHover={{ y: -4 }}
                 >
                   <Card className="bg-card border-border/50 overflow-hidden hover:shadow-card-cinema transition-all duration-300 group cursor-pointer">
-                    <div className="relative aspect-square bg-gradient-to-br from-primary/20 to-primary/5 p-6 flex items-center justify-center">
-                      <Headphones className="h-16 w-16 text-primary opacity-60 group-hover:opacity-100 transition-opacity" />
+                    <div className="relative aspect-square bg-gradient-to-br from-primary/20 to-primary/5  flex items-center justify-center">
+                    <img
+                        src={podcast.imageSrc}
+                        alt={podcast.title}
+                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                      />
                       <div className="absolute bottom-0 left-0 right-0 h-1 bg-muted">
                         <div 
                           className="h-full bg-primary transition-all duration-500"
@@ -205,7 +220,7 @@ const Podcasts = () => {
               viewport={{ once: true }}
             >
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-                Top Episodes This Week
+                Flash Mobs
               </h2>
               <div className="w-24 h-1 bg-gradient-red rounded-full"></div>
             </motion.div>
@@ -299,7 +314,7 @@ const Podcasts = () => {
 
         {/* Featured Podcasts Grid */}
         <ContentGrid 
-          title="Featured Podcasts"
+          title="Music Related Film, TV & Podcasts"
           items={featuredPodcasts}
           showRating={true}
         />
