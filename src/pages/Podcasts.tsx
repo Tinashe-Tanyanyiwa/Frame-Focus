@@ -11,48 +11,55 @@ import maino from "@/assets/maino.png";
 import kalenChase from "@/assets/kalenChase.jpg";
 import devinWhite from "@/assets/devinWhite.jpg";
 import paysonMeistrich from "@/assets/paysonMeistrich.jpeg";
+import rockRockRock from "@/assets/rockRockRock.jpg";
+import librence from "@/assets/librence.jpg";
+import nashville from "@/assets/nashville.jpg";
 
 const Podcasts = () => {
   const featuredPodcasts = [
     {
       id: "podcast-1",
-      title: "Behind the Frame: Creator Stories",
-      category: "Entertainment",
-      date: "New Episode Daily",
-      readTime: "45 min avg",
-      rating: 4.8,
-      imageSrc: contentGrid,
-      description: "Go behind the scenes with the creators, directors, and stars of your favorite Film World content in intimate conversations about their craft."
+      title: "Rock, Rock, Rock!",
+      category: "Drama/Music",
+      date: "1956",
+      readTime: "1h 25m",
+      rating: 5.0,
+      imageSrc: rockRockRock,
+      description:
+        "Dori is trying to get together enough money to buy a strapless gown; Daddy has cut off Dori's allowance, but gee, she's gotta go to the prom.",
     },
     {
       id: "podcast-2",
-      title: "The Future of Streaming",
-      category: "Technology",
-      date: "Weekly Episodes", 
-      readTime: "35 min avg",
-      rating: 4.7,
-      imageSrc: contentGrid,
-      description: "Exploring how streaming technology is revolutionizing entertainment, from AI-powered recommendations to interactive storytelling."
+      title: "Liberace: the World's Greatest Showman",
+      category: "Musical/Film",
+      date: "2017",
+      readTime: "1h 45m",
+      rating: 6.8,
+      imageSrc: librence,
+      description:
+        "Celebrates the birth of show business and tells of a visionary who rose from nothing to create a spectacle that became a worldwide sensation.",
     },
     {
       id: "podcast-3",
-      title: "Global Stories Podcast",
-      category: "Culture",
-      date: "Bi-weekly Episodes",
-      readTime: "50 min avg",
-      rating: 4.9,
-      imageSrc: contentGrid,
-      description: "Dive deep into international content and the cultural stories that are reshaping global entertainment landscape."
+      title: "Nashville's Next Best of 3",
+      category: "Music",
+      date: "2021",
+      readTime: "2h",
+      rating: 5.9,
+      imageSrc: nashville,
+      description:
+        "Nashville's Next Best Of 3 is a new fun style of songwriting show featuring 27 new artist / songwriters. This show takes the audience intimately on the journey of writing and creating a song to the end result.",
     },
     {
       id: "podcast-4",
       title: "The Binge Report",
       category: "Reviews & Analysis",
-      date: "Weekly Episodes", 
+      date: "Weekly Episodes",
       readTime: "25 min avg",
       rating: 4.6,
       imageSrc: contentGrid,
-      description: "Your weekly guide to what's worth binging, featuring reviews, recommendations, and insider takes on trending content."
+      description:
+        "Your weekly guide to what's worth binging, featuring reviews, recommendations, and insider takes on trending content.",
     },
     {
       id: "podcast-5",
@@ -62,18 +69,20 @@ const Podcasts = () => {
       readTime: "60 min avg",
       rating: 4.8,
       imageSrc: contentGrid,
-      description: "Long-form conversations with industry pioneers who are shaping the future of entertainment and technology."
+      description:
+        "Long-form conversations with industry pioneers who are shaping the future of entertainment and technology.",
     },
     {
       id: "podcast-6",
       title: "Fan Theories & Deep Dives",
-      category: "Fan Community", 
+      category: "Fan Community",
       date: "Twice Weekly",
       readTime: "40 min avg",
       rating: 4.5,
       imageSrc: contentGrid,
-      description: "Join passionate fans as they explore theories, easter eggs, and hidden meanings in your favorite shows and movies."
-    }
+      description:
+        "Join passionate fans as they explore theories, easter eggs, and hidden meanings in your favorite shows and movies.",
+    },
   ];
 
   const podcastCategories = [
@@ -84,58 +93,78 @@ const Podcasts = () => {
     { name: "Reviews & Analysis", shows: "10 shows", listeners: "1.2M" },
     { name: "Fan Community", shows: "9 shows", listeners: "950K" },
     { name: "Biography & Interviews", shows: "7 shows", listeners: "1.1M" },
-    { name: "Educational", shows: "11 shows", listeners: "780K" }
+    { name: "Educational", shows: "11 shows", listeners: "780K" },
   ];
 
   const currentlyListening = [
-    { title: "Maino", progress: 1, timeLeft: "American rapper and radio personality", imageSrc: maino },
-    { title: "Kalen Chase", progress: 1, timeLeft: "Rock n Roll", imageSrc: kalenChase },
-    { title: "Devin White", progress: 1, timeLeft: "R&B singer", imageSrc: devinWhite },
-    { title: "Payson Meistrich", progress: 1, timeLeft: "Singer", imageSrc: paysonMeistrich }
+    {
+      title: "Maino",
+      progress: 1,
+      timeLeft: "American rapper and radio personality",
+      imageSrc: maino,
+    },
+    {
+      title: "Kalen Chase",
+      progress: 1,
+      timeLeft: "Rock n Roll",
+      imageSrc: kalenChase,
+    },
+    {
+      title: "Devin White",
+      progress: 1,
+      timeLeft: "R&B singer",
+      imageSrc: devinWhite,
+    },
+    {
+      title: "Payson Meistrich",
+      progress: 1,
+      timeLeft: "Singer",
+      imageSrc: paysonMeistrich,
+    },
   ];
 
   const topEpisodes = [
     {
       title: "Lucinda's Thriller Flash Mob Compilation",
-      podcast: "All Ages", 
+      podcast: "All Ages",
       duration: "6m",
       plays: "1.2M",
-      date: "2024"
+      date: "2024",
     },
     {
       title: "Saigon's Ol Skool Moves Flash Mob",
       podcast: "All Ages",
-      duration: "2m", 
+      duration: "2m",
       plays: "890K",
-      date: "2023"
+      date: "2023",
     },
     {
       title: "Lucinda's Leave Your Hat On Flash Mob - with Sweet Voodoo",
       podcast: "All Ages",
       duration: "5m",
-      plays: "750K", 
-      date: "2024"
+      plays: "750K",
+      date: "2024",
     },
     {
       title: "Lucinda's Freedom 4th of July Flash Mob",
       podcast: "All Ages",
       duration: "4m",
       plays: "680K",
-      date: "2022"
+      date: "2022",
     },
     {
       title: "Lucinda's Footloose Flash Mob",
       podcast: "All Ages",
       duration: "5m",
       plays: "680K",
-      date: "2020"
-    }
+      date: "2020",
+    },
   ];
 
   return (
     <div className="min-h-screen bg-background text-foreground">
       <Navigation />
-      
+
       <main className="pt-20 lg:pt-24">
         {/* Hero Section */}
         <section className="px-4 sm:px-6 lg:px-8 py-16 bg-gradient-to-b from-background to-muted/20">
@@ -152,8 +181,9 @@ const Podcasts = () => {
                 </h1>
               </div>
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-                Dive deeper into the world of entertainment with exclusive  music,  podcasts featuring creator interviews, 
-                behind-the-scenes stories, and expert analysis of your favorite content.
+                Dive deeper into the world of entertainment with exclusive
+                music, podcasts featuring creator interviews, behind-the-scenes
+                stories, and expert analysis of your favorite content.
               </p>
             </motion.div>
           </div>
@@ -168,9 +198,9 @@ const Podcasts = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
             >
-             Who To Listen To
+              Who To Listen To
             </motion.h2>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {currentlyListening.map((podcast, index) => (
                 <motion.div
@@ -183,13 +213,13 @@ const Podcasts = () => {
                 >
                   <Card className="bg-card border-border/50 overflow-hidden hover:shadow-card-cinema transition-all duration-300 group cursor-pointer">
                     <div className="relative aspect-square bg-gradient-to-br from-primary/20 to-primary/5  flex items-center justify-center">
-                    <img
+                      <img
                         src={podcast.imageSrc}
                         alt={podcast.title}
                         className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                       />
                       <div className="absolute bottom-0 left-0 right-0 h-1 bg-muted">
-                        <div 
+                        <div
                           className="h-full bg-primary transition-all duration-500"
                           style={{ width: `${podcast.progress}%` }}
                         />
@@ -241,21 +271,28 @@ const Podcasts = () => {
                         <div className="flex-1">
                           <div className="flex items-center mb-2">
                             <span className="text-2xl font-bold text-primary mr-4">
-                              {String(index + 1).padStart(2, '0')}
+                              {String(index + 1).padStart(2, "0")}
                             </span>
                             <div>
                               <h3 className="font-bold text-foreground group-hover:text-primary transition-colors mb-1">
                                 {episode.title}
                               </h3>
                               <p className="text-sm text-muted-foreground">
-                                {episode.podcast} • {episode.duration} • {episode.plays} plays
+                                {episode.podcast} • {episode.duration} •{" "}
+                                {episode.plays} plays
                               </p>
                             </div>
                           </div>
                         </div>
                         <div className="flex items-center space-x-4 ml-6">
-                          <span className="text-sm text-muted-foreground">{episode.date}</span>
-                          <Button size="sm" variant="ghost" className="hover:bg-primary/10">
+                          <span className="text-sm text-muted-foreground">
+                            {episode.date}
+                          </span>
+                          <Button
+                            size="sm"
+                            variant="ghost"
+                            className="hover:bg-primary/10"
+                          >
                             <Play className="h-4 w-4" />
                           </Button>
                         </div>
@@ -313,7 +350,7 @@ const Podcasts = () => {
         </section>
 
         {/* Featured Podcasts Grid */}
-        <ContentGrid 
+        <ContentGrid
           title="Music Related Film, TV & Podcasts"
           items={featuredPodcasts}
           showRating={true}
@@ -327,7 +364,7 @@ const Podcasts = () => {
                 { icon: Mic, label: "Total Shows", value: "78" },
                 { icon: Users, label: "Monthly Listeners", value: "12.4M" },
                 { icon: Clock, label: "Total Hours", value: "2,500+" },
-                { icon: Download, label: "Downloads", value: "45M" }
+                { icon: Download, label: "Downloads", value: "45M" },
               ].map((stat, index) => (
                 <motion.div
                   key={stat.label}
@@ -338,8 +375,12 @@ const Podcasts = () => {
                   className="text-center"
                 >
                   <stat.icon className="h-12 w-12 text-primary mx-auto mb-4" />
-                  <div className="text-3xl font-bold text-foreground mb-2">{stat.value}</div>
-                  <div className="text-sm text-muted-foreground">{stat.label}</div>
+                  <div className="text-3xl font-bold text-foreground mb-2">
+                    {stat.value}
+                  </div>
+                  <div className="text-sm text-muted-foreground">
+                    {stat.label}
+                  </div>
                 </motion.div>
               ))}
             </div>
@@ -364,8 +405,8 @@ const Podcasts = () => {
                   Stream or Download for Offline Listening
                 </h3>
                 <p className="text-muted-foreground mb-6">
-                  Access your favorite podcasts on any device. Download episodes for offline listening 
-                  during commutes, workouts, or travel.
+                  Access your favorite podcasts on any device. Download episodes
+                  for offline listening during commutes, workouts, or travel.
                 </p>
                 <Button variant="cinema" size="lg">
                   Get the App
@@ -379,7 +420,8 @@ const Podcasts = () => {
         <section className="px-4 sm:px-6 lg:px-8 py-16">
           <div className="max-w-7xl mx-auto text-center">
             <p className="text-muted-foreground">
-              New episodes added weekly • Ad-free listening with Film World Premium
+              New episodes added weekly • Ad-free listening with Film World
+              Premium
             </p>
           </div>
         </section>
