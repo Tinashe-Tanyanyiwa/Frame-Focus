@@ -14,6 +14,9 @@ import paysonMeistrich from "@/assets/paysonMeistrich.jpeg";
 import rockRockRock from "@/assets/rockRockRock.jpg";
 import librence from "@/assets/librence.jpg";
 import nashville from "@/assets/nashville.jpg";
+import danceFu from "@/assets/danceFu.jpg";
+import newMusicMondays from "@/assets/newMusicMondays.jpg";
+import noBarsOff from "@/assets/noBarsOff.png";
 
 const Podcasts = () => {
   const featuredPodcasts = [
@@ -52,36 +55,36 @@ const Podcasts = () => {
     },
     {
       id: "podcast-4",
-      title: "The Binge Report",
-      category: "Reviews & Analysis",
-      date: "Weekly Episodes",
-      readTime: "25 min avg",
-      rating: 4.6,
-      imageSrc: contentGrid,
+      title: "Dance Fu",
+      category: "Dance/Music",
+      date: "2011",
+      readTime: "1h 30m",
+      rating: 3.1,
+      imageSrc: danceFu,
       description:
-        "Your weekly guide to what's worth binging, featuring reviews, recommendations, and insider takes on trending content.",
+        "A young championship dancer seeking fortune and fame is forced to avenge the death of his uncle.",
     },
     {
       id: "podcast-5",
-      title: "Innovators & Visionaries",
-      category: "Biography",
-      date: "Monthly Episodes",
-      readTime: "60 min avg",
-      rating: 4.8,
-      imageSrc: contentGrid,
+      title: "New Music Mondays with DJ Epps",
+      category: "Music/Series",
+      date: "2025",
+      readTime: "15 eps",
+      rating: 6.8,
+      imageSrc: newMusicMondays,
       description:
-        "Long-form conversations with industry pioneers who are shaping the future of entertainment and technology.",
+        "The 1st series of New Music Mondays with DJ Epps features artists like Indica Trelle, Harrdluck, Sing Like Philly, Ba Da Binga, Nonshalont and more pushing their music to the massive utilizing Dj Epps unique platform. Also 2 Producer were selected to showcase their beat production in hoping to find an artist to create a future hit song.",
     },
     {
       id: "podcast-6",
-      title: "Fan Theories & Deep Dives",
-      category: "Fan Community",
-      date: "Twice Weekly",
-      readTime: "40 min avg",
+      title: "No Bars Off",
+      category: "Podcast/Music",
+      date: "2025",
+      readTime: "11 eps",
       rating: 4.5,
-      imageSrc: contentGrid,
+      imageSrc: noBarsOff,
       description:
-        "Join passionate fans as they explore theories, easter eggs, and hidden meanings in your favorite shows and movies.",
+        "No Bars Off is a thought-provoking podcast that provides provocative line-by-line breakdowns and compelling conversations surrounding current or classic hip-hop verses. Hosted by former emcees, Brooklyn representers, and Delaware State University Alumni, Sha Stimuli and Boardwalk Brown reveal literary techniques, explain entendres, salute rhyme schemes, and feature guest artists on the show that avid rap fans didn't know they needed.",
     },
   ];
 
